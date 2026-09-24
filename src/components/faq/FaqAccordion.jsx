@@ -6,11 +6,48 @@ export const FaqAccordion = ({ navigateToTab }) => {
   const { t } = useLanguage();
   const [openIndex, setOpenIndex] = useState(0);
 
-  const faqItems = t('faq.items');
+  const defaultFaqItems = [
+    {
+      q: "What is PM Surya Ghar Muft Bijli Yojana and how much subsidy can I get?",
+      a: "PM Surya Ghar is a central government scheme providing up to ₹78,000 direct bank transfer (DBT) subsidy for rooftop solar installations. You get ₹30,000 for 1 kW, ₹60,000 for 2 kW, and ₹78,000 for 3 kW to 10 kW systems. Green Leaf Energy Solution is an MSEDCL-approved vendor to help you claim this subsidy."
+    },
+    {
+      q: "How long does the complete solar installation process take?",
+      a: "A typical residential rooftop solar installation takes 7 to 15 working days from site survey to grid commissioning. This includes site feasibility survey, structural design, panel & inverter procurement, mounting structure fabrication, electrical wiring, MSEDCL net meter application, and final commissioning."
+    },
+    {
+      q: "What is the payback period for a rooftop solar system?",
+      a: "For a residential system in Baramati/Pune, the typical payback period is 4 to 6 years depending on your electricity consumption, tariff rate, and system capacity. With PM Surya Ghar subsidy, payback reduces further. After payback, you enjoy 20+ years of virtually free electricity."
+    },
+    {
+      q: "Is my roof suitable for solar installation?",
+      a: "Most RCC (concrete) terraces, GI sheet sheds, and tiled rooftops are suitable for solar panels. The ideal roof has south or west facing orientation with minimal shading. Green Leaf Energy Solution provides a FREE site feasibility survey to assess your rooftop's solar potential."
+    },
+    {
+      q: "What maintenance does a solar system require?",
+      a: "Solar panels require minimal maintenance. We recommend panel cleaning every 1-2 months to maintain peak efficiency. Our Annual Maintenance Contract (AMC) covers scheduled panel cleaning, inverter health check, wiring inspection, and performance monitoring — ensuring your system runs at maximum output year-round."
+    },
+    {
+      q: "Can I get solar with zero upfront cost or bank loan EMI?",
+      a: "Yes! Several nationalized banks like SBI, Bank of Maharashtra, and Canara Bank offer solar loans at 8-10% interest with tenures up to 7 years. Green Leaf Energy Solution assists you with the complete bank loan documentation and liaisoning to make solar installation affordable."
+    },
+    {
+      q: "What brands of solar panels and inverters do you use?",
+      a: "We use only Tier-1 ALMM (Approved List of Models and Manufacturers) listed solar panels from brands like Waaree, Adani, Vikram, and Nexus. For inverters, we use Growatt, Solis, Fronius, and Havells — all with manufacturer warranty and online monitoring apps."
+    },
+    {
+      q: "Does Green Leaf handle MSEDCL net meter application and approval?",
+      a: "Yes, we handle the complete MSEDCL net meter application, inspection scheduling, and commissioning liaisoning on your behalf. As an MSEDCL-approved solar EPC vendor, we ensure your bi-directional net meter is installed and activated without any hassle to you."
+    }
+  ];
+
+  const rawFaqItems = t('faq.items');
+  const faqItems = Array.isArray(rawFaqItems) ? rawFaqItems : defaultFaqItems;
 
   const toggleFaq = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
 
   return (
     <section className="py-16 bg-white border-b border-slate-200/60 font-sans" id="faq">

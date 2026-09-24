@@ -4,8 +4,8 @@
 export const siteConfig = {
   companyName: "GREEN LEAF ENERGY SOLUTION",
   companyShortName: "Green Leaf Solar",
-  tagline: "Powering Tomorrow with Clean Energy",
-  positioning: "MSEDCL Approved Solar EPC Company",
+  tagline: "The Company You Can Rely Upon",
+  positioning: "Solar + Electrical Contracting Company",
   domain: "greenleafenergysolution.com",
   
   // Credentials & Approvals (Editable Placeholders)
@@ -18,15 +18,15 @@ export const siteConfig = {
     gstNumber: "27XXXXX0000X1Z5", // Admin Placeholder
   },
 
-  // Contact Information (Configured for +91 93225 13396)
+  // Contact Information
   contact: {
-    phonePrimary: "+91 93225 13396",
-    phoneSecondary: "+91 93225 13396",
-    phoneRaw: "+919322513396", // Used for tel: links
-    whatsappNumber: "919322513396", // Used for WhatsApp API
-    email: "info@greenleafenergysolution.com",
-    salesEmail: "sales@greenleafenergysolution.com",
-    supportEmail: "support@greenleafenergysolution.com",
+    phonePrimary: "+91 98232 42478",
+    phoneSecondary: "+91 95610 25583",
+    phoneRaw: "+919823242478", // Used for tel: links
+    whatsappNumber: "919823242478", // Used for WhatsApp API
+    email: "greenleafenergysolns@gmail.com",
+    salesEmail: "greenleafenergysolns@gmail.com",
+    supportEmail: "greenleafenergysolns@gmail.com",
     address: {
       street: "Plot No. 12, Solar Tech Park, Near Industrial Estate",
       city: "Baramati",
@@ -34,7 +34,7 @@ export const siteConfig = {
       state: "Maharashtra",
       pincode: "413102",
       country: "India",
-      fullAddress: "Plot No. 12, Solar Tech Park, Near Industrial Estate, Baramati, Dist. Pune, Maharashtra - 413102"
+      fullAddress: "Pune | Baramati | Ahilyanagar | Solapur | Latur | Nanded, Maharashtra"
     },
     workingHours: "Mon - Sat: 9:00 AM - 7:00 PM | Sun: Closed",
     googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60613.20311746685!2d74.55000000000001!3d18.150000000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc3a0058b88d8b1%3A0x6a053c825a07289!2sBaramati%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"

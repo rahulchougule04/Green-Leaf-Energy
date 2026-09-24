@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Clean Sky & Terrace Tone -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="35%" stop-color="#38bdf8" />
+      <stop offset="65%" stop-color="#bae6fd" />
+      <stop offset="100%" stop-color="#f0f9ff" />
+    </linearGradient>
+
+    <!-- Floor Terrace Concrete Grid Pattern -->
+    <linearGradient id="terraceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <pattern id="surveyGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0284c7" stroke-width="0.75" stroke-opacity="0.3" stroke-dasharray="2 2" />
+    </pattern>
+
+    <!-- Glow & Shadow Filters -->
+    <filter id="shadowBlur" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.25" />
+    </filter>
+
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+
+    <linearGradient id="sunArc" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#eab308" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect width="1200" height="800" fill="url(#skyGrad)" />
+
+  <!-- Distant Natural Horizon & Trees -->
+  <path d="M 0 380 Q 200 360 400 375 T 800 365 T 1200 375 L 1200 800 L 0 800 Z" fill="#64748b" opacity="0.3" />
+  <path d="M 0 400 Q 250 385 500 395 T 1000 390 T 1200 398 L 1200 800 L 0 800 Z" fill="#15803d" opacity="0.4" />
+
+  <!-- Sun Path Trajectory Arc -->
+  <path d="M 150 420 Q 600 80 1050 420" fill="none" stroke="url(#sunArc)" stroke-width="4" stroke-dasharray="8 8" />
+  
+  <!-- Sun Icon & Radiation -->
+  <g transform="translate(600, 160)">
+    <circle cx="0" cy="0" r="36" fill="#fbbf24" opacity="0.3" filter="blur(8px)" />
+    <circle cx="0" cy="0" r="26" fill="#f59e0b" />
+    <circle cx="0" cy="0" r="20" fill="#fef08a" />
+    <line x1="0" y1="-32" x2="0" y2="-40" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" />
+    <line x1="0" y1="32" x2="0" y2="40" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" />
+    <line x1="-32" y1="0" x2="-40" y2="0" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" />
+    <line x1="32" y1="0" x2="40" y2="0" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" />
+    <text x="0" y="55" font-family="Arial, sans-serif" font-weight="900" font-size="12" fill="#d97706" text-anchor="middle">PEAK SOLAR NOON • 18° TILT</text>
+  </g>
+
+  <!-- Empty Residential Bungalow Rooftop Terrace (Perspective Projection) -->
+  <g transform="translate(600, 480)" filter="url(#shadowBlur)">
+    <!-- Terrace Parapet Exterior Walls -->
+    <polygon points="-460,180 460,180 520,240 -520,240" fill="#64748b" />
+    <polygon points="460,180 520,240 440,-60 390,-80" fill="#94a3b8" />
+    
+    <!-- Empty Terrace Concrete Floor -->
+    <polygon points="-460,180 460,180 380,-90 -380,-90" fill="url(#terraceGrad)" stroke="#475569" stroke-width="3" />
+    
+    <!-- Measurement Grid Overlay -->
+    <polygon points="-460,180 460,180 380,-90 -380,-90" fill="url(#surveyGrid)" opacity="0.8" />
+
+    <!-- Parapet Wall Boundary -->
+    <polygon points="-460,180 -460,140 -380,-120 -380,-90" fill="#cbd5e1" stroke="#64748b" stroke-width="2" />
+    <polygon points="-380,-120 380,-120 380,-90 -380,-90" fill="#e2e8f0" stroke="#64748b" stroke-width="2" />
+    <polygon points="380,-120 460,140 460,180 380,-90" fill="#94a3b8" stroke="#64748b" stroke-width="2" />
+
+    <!-- Survey Chalk Marking: Planned 3 kWp Array Layout Zone -->
+    <g transform="translate(0, 30)">
+      <polygon points="-220,90 220,90 190,-40 -190,-40" fill="#0284c7" fill-opacity="0.12" stroke="#0284c7" stroke-width="3" stroke-dasharray="6 6" />
+      
+      <!-- Chalk Dimension Labels -->
+      <line x1="-220" y1="105" x2="220" y2="105" stroke="#0284c7" stroke-width="2" />
+      <polygon points="-220,102 -220,108 -230,105" fill="#0284c7" />
+      <polygon points="220,102 220,108 230,105" fill="#0284c7" />
+      <text x="0" y="125" font-family="monospace" font-weight="900" font-size="14" fill="#0369a1" text-anchor="middle">ARRAY LENGTH: 18 FT (6 DCR MODULES)</text>
+
+      <line x1="235" y1="90" x2="205" y2="-40" stroke="#0284c7" stroke-width="2" />
+      <text x="235" y="25" font-family="monospace" font-weight="900" font-size="13" fill="#0369a1" text-anchor="start">WIDTH: 11 FT</text>
+
+      <!-- Center Crosshair & Orientation Marker -->
+      <circle cx="0" cy="25" r="14" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+      <line x1="-20" y1="25" x2="20" y2="25" stroke="#0284c7" stroke-width="2" />
+      <line x1="0" y1="5" x2="0" y2="45" stroke="#0284c7" stroke-width="2" />
+      <text x="0" y="29" font-family="Arial, sans-serif" font-weight="900" font-size="10" fill="#0284c7" text-anchor="middle">S</text>
+      <text x="0" y="-12" font-family="Arial, sans-serif" font-weight="900" font-size="13" fill="#0f172a" text-anchor="middle">100% SHADOW-FREE ALLOCATION (300 SQ. FT.)</text>
+    </g>
+
+    <!-- Water Tank (SINTEX) in Northwest Corner -->
+    <g transform="translate(310, -75)">
+      <rect x="-35" y="-55" width="70" height="70" rx="14" fill="#0f172a" stroke="#334155" stroke-width="2" />
+      <line x1="-35" y1="-35" x2="35" y2="-35" stroke="#475569" stroke-width="2" />
+      <line x1="-35" y1="-15" x2="35" y2="-15" stroke="#475569" stroke-width="2" />
+      <text x="0" y="-22" font-family="Arial, sans-serif" font-weight="900" font-size="10" fill="#94a3b8" text-anchor="middle">SINTEX</text>
+      <text x="0" y="28" font-family="monospace" font-size="10" fill="#64748b" text-anchor="middle">WATER TANK</text>
+    </g>
+  </g>
+
+  <!-- Technical Overlay HUD Badges (Requirement for Solar EPC Engineering) -->
+  <!-- Top Left: Site Survey Header -->
+  <g transform="translate(40, 40)">
+    <rect width="390" height="78" rx="12" fill="#0f172a" fill-opacity="0.95" stroke="#334155" stroke-width="1.5" />
+    <circle cx="34" cy="39" r="16" fill="#10b981" />
+    <path d="M 27 39 L 32 44 L 41 34" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="62" y="32" font-family="Arial, sans-serif" font-weight="900" font-size="13" fill="#ffffff" letter-spacing="0.5">PRE-INSTALLATION SITE SURVEY</text>
+    <text x="62" y="52" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#38bdf8">3 kWp PM SURYA GHAR ROOFTOP</text>
+    <text x="62" y="66" font-family="monospace" font-size="9" fill="#94a3b8">VIDYANAGARI, BARAMATI • LAT 18.15° N</text>
+  </g>
+
+  <!-- Top Right: Feasibility Certification Stamp -->
+  <g transform="translate(850, 40)">
+    <rect width="310" height="78" rx="12" fill="#0f172a" fill-opacity="0.95" stroke="#059669" stroke-width="2" />
+    <text x="20" y="28" font-family="Arial, sans-serif" font-weight="900" font-size="11" fill="#34d399" letter-spacing="1">FEASIBILITY REPORT: APPROVED</text>
+    <text x="20" y="48" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#ffffff">DISCOM: MSEDCL BARAMATI</text>
+    <text x="20" y="66" font-family="monospace" font-size="9" fill="#94a3b8">SHADOW LOSS: 0.0% • AZIMUTH: 180° S</text>
+  </g>
+
+  <!-- Compass Rose -->
+  <g transform="translate(1120, 190)">
+    <circle cx="0" cy="0" r="32" fill="#0f172a" fill-opacity="0.9" stroke="#38bdf8" stroke-width="2" />
+    <polygon points="0,-24 7,0 0,6 -7,0" fill="#ef4444" />
+    <polygon points="0,24 7,0 0,-6 -7,0" fill="#cbd5e1" />
+    <text x="0" y="-12" font-family="Arial, sans-serif" font-weight="900" font-size="11" fill="#ffffff" text-anchor="middle">N</text>
+    <text x="0" y="20" font-family="Arial, sans-serif" font-weight="900" font-size="11" fill="#ffffff" text-anchor="middle">S</text>
+  </g>
+
+  <!-- Bottom Checklist Banner -->
+  <g transform="translate(40, 720)">
+    <rect width="1120" height="48" rx="10" fill="#0f172a" fill-opacity="0.9" stroke="#1e293b" />
+    <text x="30" y="30" font-family="monospace" font-size="12" fill="#38bdf8">✓ RCC STRUCTURE INTEGRITY OK</text>
+    <text x="310" y="30" font-family="monospace" font-size="12" fill="#38bdf8">✓ CHEMICAL EARTHING PIT IDENTIFIED</text>
+    <text x="640" y="30" font-family="monospace" font-size="12" fill="#38bdf8">✓ MSEDCL CONSUMER NO. LINKED</text>
+    <text x="960" y="30" font-family="monospace" font-size="12" fill="#10b981" font-weight="bold">READY FOR 3 kWp GI</text>
+  </g>
+</svg>

@@ -16,6 +16,7 @@ const DesktopServicesView = ({ servicesList, serviceIconMap, openQuoteModal, ope
         return (
           <div 
             key={service.id}
+            id={service.id}
             className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-solar-lg hover:border-solar-green/40 transition-all duration-300 flex flex-col justify-between group transform hover:-translate-y-1 space-y-4"
           >
             <div className="space-y-4">
@@ -66,6 +67,7 @@ const MobileServicesView = ({ servicesList, serviceIconMap, openQuoteModal, open
         return (
           <div 
             key={service.id}
+            id={service.id}
             className="bg-white rounded-xl p-4 border border-slate-200 shadow-sm space-y-3"
           >
             <div className="flex items-start space-x-3">
@@ -118,12 +120,10 @@ export const ServicesGrid = ({ openQuoteModal, openServiceModal }) => {
     "industrial-solar": Factory,
     "ground-mounted": Globe,
     "hybrid-solar": Cpu,
-    "off-grid-solar": BatteryCharging,
-    "solar-street-light": Sun,
-    "lithium-battery": Battery,
-    "ev-charger": Zap,
-    "amc-service": Wrench,
-    "solar-consultancy": FileText
+    "electrical-contracting": Zap,
+    "industrial-electrical": Factory,
+    "lt-ht-electrical": BatteryCharging,
+    "electrical-testing": Wrench
   };
 
   const servicesList = t('services.list');

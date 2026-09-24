@@ -6,25 +6,8 @@ import { MobileStickyBar } from './components/layout/MobileStickyBar';
 import { FloatingWhatsApp } from './components/layout/FloatingWhatsApp';
 import { QuoteWizardModal } from './components/forms/QuoteWizardModal';
 import { Modal } from './components/layout/Modal';
-
+import { CheckCircle2 } from 'lucide-react';
 import { HomePage } from './pages/HomePage';
-import { AboutPage } from './pages/AboutPage';
-import { ServicesPage } from './pages/ServicesPage';
-import { GalleryPage } from './pages/GalleryPage';
-import { CalculatorPage } from './pages/CalculatorPage';
-import { SubsidyPage } from './pages/SubsidyPage';
-import { ReviewsPage } from './pages/ReviewsPage';
-import { BlogPage } from './pages/BlogPage';
-import { EmiPage } from './pages/EmiPage';
-import { ContactPage } from './pages/ContactPage';
-import { CareersPage } from './pages/CareersPage';
-import { DealerPage } from './pages/DealerPage';
-import { FranchisePage } from './pages/FranchisePage';
-import { ServiceRequestPage } from './pages/ServiceRequestPage';
-import { ComplaintPage } from './pages/ComplaintPage';
-import { AmcPage } from './pages/AmcPage';
-import { DownloadsPage } from './pages/DownloadsPage';
-import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 export function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -37,63 +20,47 @@ export function App() {
   const openServiceModal = (service) => setSelectedService(service);
   const closeServiceModal = () => setSelectedService(null);
 
-  const renderActivePage = () => {
-    switch (activeTab) {
-      case 'home':
-        return <HomePage openQuoteModal={openQuoteModal} openServiceModal={openServiceModal} navigateToTab={setActiveTab} />;
-      case 'about':
-        return <AboutPage openQuoteModal={openQuoteModal} navigateToTab={setActiveTab} />;
-      case 'services':
-        return <ServicesPage openQuoteModal={openQuoteModal} openServiceModal={openServiceModal} navigateToTab={setActiveTab} />;
-      case 'gallery':
-        return <GalleryPage openQuoteModal={openQuoteModal} navigateToTab={setActiveTab} />;
-      case 'calculator':
-        return <CalculatorPage openQuoteModal={openQuoteModal} navigateToTab={setActiveTab} />;
-      case 'subsidy':
-        return <SubsidyPage openQuoteModal={openQuoteModal} navigateToTab={setActiveTab} />;
-      case 'reviews':
-        return <ReviewsPage openQuoteModal={openQuoteModal} navigateToTab={setActiveTab} />;
-      case 'blog':
-        return <BlogPage openQuoteModal={openQuoteModal} navigateToTab={setActiveTab} />;
-      case 'emi':
-        return <EmiPage openQuoteModal={openQuoteModal} navigateToTab={setActiveTab} />;
-      case 'contact':
-        return <ContactPage openQuoteModal={openQuoteModal} navigateToTab={setActiveTab} />;
-      case 'careers':
-        return <CareersPage />;
-      case 'dealer':
-        return <DealerPage />;
-      case 'franchise':
-        return <FranchisePage />;
-      case 'serviceRequest':
-        return <ServiceRequestPage />;
-      case 'complaint':
-        return <ComplaintPage />;
-      case 'amc':
-        return <AmcPage />;
-      case 'downloads':
-        return <DownloadsPage />;
-      default:
-        return <HomePage openQuoteModal={openQuoteModal} openServiceModal={openServiceModal} navigateToTab={setActiveTab} />;
+  const scrollToSection = (id) => {
+    setActiveTab(id);
+    if (!id || id === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    // We now have IDs on the individual service cards, so we can scroll directly to them
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -80; // Offset for sticky navbar
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
 
   return (
     <LanguageProvider>
       <div className="min-h-screen flex flex-col bg-solar-bg selection:bg-solar-green selection:text-white">
-        
-        {/* Sticky Header Navbar */}
-        <Navbar activeTab={activeTab} setActiveTab={setActiveTab} openQuoteModal={openQuoteModal} />
 
-        {/* Main Content Area */}
+        {/* Sticky Header Navbar */}
+        <Navbar
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          scrollToSection={scrollToSection}
+          openQuoteModal={openQuoteModal}
+        />
+        
+        {/* Main Content Area - Single Page Landing Experience */}
         <main className="flex-1">
-          {renderActivePage()}
+          <HomePage 
+            openQuoteModal={openQuoteModal} 
+            openServiceModal={openServiceModal} 
+            navigateToTab={scrollToSection} 
+          />
         </main>
 
         {/* Global Corporate Footer */}
-        <Footer setActiveTab={setActiveTab} />
-
-        {/* Sticky Mobile CTA Bar */}
+        <Footer
+          setActiveTab={setActiveTab}
+          scrollToSection={scrollToSection}
+        />
         <MobileStickyBar openQuoteModal={openQuoteModal} />
 
         {/* Floating WhatsApp Widget */}
@@ -107,29 +74,70 @@ export function App() {
           {selectedService && (
             <div className="space-y-4 font-sans text-xs text-slate-700">
               <p className="text-sm font-semibold text-solar-blue leading-relaxed">
-                {selectedService.desc}
+                {selectedService.fullDesc || selectedService.desc}
               </p>
-              <div className="space-y-2 bg-slate-50 p-4 rounded-xl border border-slate-200">
-                <h4 className="font-bold text-solar-blue">What's Included:</h4>
-                <div className="space-y-1 text-slate-600">
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-solar-green" />
-                    <span>Free Site Feasibility & Roof Angle Survey</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-solar-green" />
-                    <span>Tier-1 ALMM Listed High Efficiency Panels</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-solar-green" />
-                    <span>MSEDCL Bi-Directional Net Meter Liaisoning</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-solar-green" />
-                    <span>25-Year Performance Warranty & AMC Support</span>
+
+              {selectedService.benefits ? (
+                <div className="space-y-2 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                  <h4 className="font-bold text-solar-blue">{selectedService.benefitsTitle || "Benefits:"}</h4>
+                  <div className="space-y-1 text-slate-600">
+                    {selectedService.benefits.map((benefit, idx) => (
+                      <div key={idx} className="flex items-start space-x-2">
+                        <CheckCircle2 className="w-4 h-4 text-solar-green mt-0.5 flex-shrink-0" />
+                        <span>{benefit}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
-              </div>
+              ) : (
+                <div className="space-y-2 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                  <h4 className="font-bold text-solar-blue">What's Included:</h4>
+                  <div className="space-y-1 text-slate-600">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle2 className="w-4 h-4 text-solar-green" />
+                      <span>Free Site Feasibility &amp; Roof Angle Survey</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle2 className="w-4 h-4 text-solar-green" />
+                      <span>Tier-1 ALMM Listed High Efficiency Panels</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle2 className="w-4 h-4 text-solar-green" />
+                      <span>MSEDCL Bi-Directional Net Meter Liaisoning</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle2 className="w-4 h-4 text-solar-green" />
+                      <span>25-Year Performance Warranty &amp; AMC Support</span>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {selectedService.process && (
+                <div className="space-y-2 bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+                  <h4 className="font-bold text-solar-blue">{selectedService.processTitle || "Our Process:"}</h4>
+                  {Array.isArray(selectedService.process) ? (
+                    <div className="space-y-1 text-slate-600 font-medium">
+                      {selectedService.process.map((item, idx) => (
+                        <div key={idx} className="flex items-start space-x-2">
+                          <CheckCircle2 className="w-4 h-4 text-solar-blue mt-0.5 flex-shrink-0 opacity-70" />
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-slate-600 font-medium leading-relaxed">
+                      {selectedService.process}
+                    </p>
+                  )}
+                </div>
+              )}
+
+              {selectedService.footerNote && (
+                <p className="text-xs text-slate-500 italic px-1 pt-1">
+                  {selectedService.footerNote}
+                </p>
+              )}
               <button
                 onClick={() => {
                   closeServiceModal();

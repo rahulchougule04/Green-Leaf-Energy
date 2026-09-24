@@ -1,4 +1,5 @@
 // Comprehensive Bilingual Translation Dictionary (English | मराठी)
+// Configured specifically for Green Leaf Energy Solution
 
 export const translations = {
   en: {
@@ -7,12 +8,14 @@ export const translations = {
       home: "Home",
       about: "About Us",
       services: "Services",
-      projects: "Projects",
+      journey: "Project Journey",
+      projects: "Completed Projects",
       calculator: "Solar Calculator",
       subsidy: "PM Surya Ghar",
+      knowledge: "Knowledge Center",
       gallery: "Gallery",
-      reviews: "Reviews",
-      blog: "Blog",
+      reviews: "Client Reviews",
+      blog: "Knowledge Center",
       careers: "Careers",
       franchise: "Franchise",
       dealer: "Become a Dealer",
@@ -29,54 +32,181 @@ export const translations = {
 
     // Hero Section
     hero: {
-      companyName: "GREEN LEAF ENERGY SOLUTION",
-      tagline: "Powering Tomorrow with Clean Energy",
-      subHeading: "MSEDCL Approved Solar EPC Company",
-      additionalMsg: "Save on Electricity Bills. Generate Your Own Clean Energy.",
-      btnSiteSurvey: "Get Free Site Survey",
-      btnGetQuote: "Get Quotation",
+      companyName: "Green Leaf Energy Solution",
+      tagline: "The Company You Can Rely Upon",
+      subHeading: "Solar + Electrical Contracting Company",
+      additionalMsg: "MSEDCL Approved Solar EPC Vendor & Licensed Electrical Contractor. Service Areas: Pune | Baramati | Ahilyanagar | Solapur | Latur | Nanded, Maharashtra.",
+      btnSiteSurvey: "Book a Site Survey",
+      btnGetQuote: "Get Free Solar Quote",
       btnWhatsApp: "WhatsApp Now",
       experienceBadge: "18+ Years Electrical Engineering Expertise"
     },
 
-    // Trust Credentials
+    // Trust Credentials (6 Badges)
     trust: {
-      title: "Trusted & Government Approved Solar EPC Partner",
-      msedcl: "MSEDCL Approved Vendor",
-      pmSuryaGhar: "PM Surya Ghar Vendor",
-      iso: "ISO 9001:2015 Certified",
-      engineers: "Experienced Engineers",
-      subsidy: "Subsidy Assistance",
-      installation: "End-to-End Installation"
+      title: "Recognized Credentials & Trust Badges",
+      subtitle: "Government-approved engineering standards and certified electrical expertise",
+      badge1: {
+        title: "ISO 9001:2015 Certified",
+        desc: "Certified Quality Management System"
+      },
+      badge2: {
+        title: "MSEDCL Approved Vendor",
+        desc: "Authorized DISCOM Net Metering Partner"
+      },
+      badge3: {
+        title: "PM Surya Ghar – Authorized Vendor",
+        desc: "Direct Govt Subsidy Portal Partner"
+      },
+      badge4: {
+        title: "MNRE/DCR Compliant Products",
+        desc: "High-Efficiency Tier-1 DCR Modules"
+      },
+      badge5: {
+        title: "Quality Installation",
+        desc: "Engineered Turnkey Erection Standards"
+      },
+      badge6: {
+        title: "Professional Electrical Services",
+        desc: "18+ Years Licensed Contracting Team"
+      }
     },
 
     // Lead Generation Strip
     leadStrip: {
-      heading: "Ready to Switch to Solar?",
-      text: "Get a Free Site Survey and know how much you can save on your monthly electricity bill with solar power.",
+      heading: "Ready to Switch to Solar & Cut Your Electricity Bills?",
+      text: "Book a complimentary rooftop site survey with our solar engineers and receive a tailored ROI & generation report.",
       btnSurvey: "Get Free Site Survey",
       btnWhatsApp: "WhatsApp Now"
     },
 
     // About Section
     about: {
-      title: "About Green Leaf Energy Solution",
-      subtitle: "Empowering Maharashtra with High-Efficiency Solar EPC Engineering",
-      description: "Green Leaf Energy Solution is a premier MSEDCL Approved Solar EPC company based in Baramati, serving Pune and surrounding regions. Backed by 18 years of electrical engineering excellence, we specialize in high-yield rooftop solar installations, commercial solar power plants, and industrial solar projects.",
-      missionTitle: "Our Mission",
-      missionText: "Provide clean, reliable and affordable energy solutions while helping customers drastically reduce their electricity expenses.",
+      title: "About Us",
+      companyName: "Green Leaf Energy Solution",
+      headline: "Solar & Electrical Contracting Experts",
+      mainStatement: "Green Leaf Energy Solution is a solar and electrical contracting company based in Baramati, Maharashtra. We provide solar energy and electrical solutions for residential, commercial and industrial customers.",
+      experienceText: "Our approach combines engineering knowledge, quality products, professional installation and customer support to deliver dependable energy solutions.",
       visionTitle: "Our Vision",
-      visionText: "Build a cleaner, zero-emission future through cutting-edge solar technology and transparent customer service.",
-      whyTitle: "Why Choose Us",
+      visionText: "To become a trusted solar and electrical solutions provider across Maharashtra.",
+      missionTitle: "Our Mission",
+      missionText: "To provide reliable, safe and technically sound solar and electrical solutions that help customers reduce energy costs and adopt cleaner energy.",
+      qualityTitle: "Quality Policy",
+      qualityText: "We adhere strictly to ISO 9001:2015 standards, MNRE safety protocols, and CEA electrical guidelines. Every solar project is engineered with hot-dip galvanized mounting structures, multi-stage lightning surge arrestors, and precision crimping for maximum durability.",
+      valuesTitle: "Core Values",
+      values: "Quality | Reliability | Transparency | Safety | Customer Satisfaction",
       highlights: [
-        "18 Years Electrical Experience",
-        "Professional Engineering Team",
-        "Quality Rooftop & Ground Installation",
-        "100% Transparent Process",
-        "Dedicated After-Sales Service Support",
-        "Full Government Subsidy Assistance",
-        "Seamless Net Metering Approval"
+        "18+ Years Electrical & EPC Experience",
+        "MSEDCL Approved Empanelled Vendor",
+        "PM Surya Ghar National Portal Authorized",
+        "In-House Certified Electrical Engineers",
+        "100% Turnkey Execution: Survey to Subsidy",
+        "Over 500+ Satisfied Rooftop & Commercial Clients",
+        "Prompt Local After-Sales Service Support"
       ]
+    },
+
+    // Solar Project Journey (10 Steps)
+    journey: {
+      tag: "Turnkey EPC Workflow",
+      title: "Solar Project Journey",
+      subtitle: "From your first inquiry to 25 years of clean free electricity, Green Leaf handles 100% of the process for you.",
+      steps: [
+        { step: 1, name: "Enquiry", desc: "Initial consultation to understand your monthly electricity bill, budget, and power needs." },
+        { step: 2, name: "Site Survey", desc: "On-site roof inspection, shadow analysis, structure feasibility, and GPS coordinates." },
+        { step: 3, name: "System Design", desc: "Optimal capacity calculation, 3D module layout, and electrical single-line diagram (SLD)." },
+        { step: 4, name: "Quotation", desc: "Transparent, itemized EPC proposal with component specs, generation estimate, and ROI." },
+        { step: 5, name: "Loan & Subsidy Assistance", desc: "Portal registration on PM Surya Ghar and low-interest green solar loan assistance." },
+        { step: 6, name: "Installation", desc: "Galvanized structure erection, Tier-1 panel alignment, inverter cabling & earthing." },
+        { step: 7, name: "MSEDCL Process", desc: "DISCOM work completion submission, technical liaisoning, and official load sanction." },
+        { step: 8, name: "Net Metering", desc: "Installation and testing of MSEDCL bi-directional net meter on your property." },
+        { step: 9, name: "Commissioning", desc: "Official safety inspection, synchronization with grid, and solar plant commissioning." },
+        { step: 10, name: "After-Sales Support", desc: "Remote app generation monitoring, periodic maintenance, and 25-year warranty care." }
+      ]
+    },
+
+    // Completed Projects
+    projects: {
+      tag: "Proven Track Record",
+      title: "Completed Projects",
+      subtitle: "Explore actual completed solar installations engineered by Green Leaf Energy Solution across Baramati, Pune, and Maharashtra.",
+      filterAll: "All Installations",
+      filterRes: "Residential Rooftop",
+      filterCom: "Commercial Solar",
+      filterInd: "Industrial Solar",
+      detailsTitle: "Project Technical Specifications",
+      stagePhotosTitle: "Installation Stage Breakdown",
+      stages: {
+        before: "Before Installation",
+        structure: "Structure",
+        panels: "Panels",
+        inverter: "Inverter",
+        acdcDb: "AC/DC DB",
+        final: "Final Installation"
+      },
+      specLabels: {
+        capacity: "Project Capacity",
+        location: "Location",
+        system: "System Type",
+        module: "Module (Brand + Wp)",
+        inverter: "Inverter (Brand)",
+        date: "Installation Date"
+      },
+      ctaQuote: "Want a Similar Solar System for Your Roof?"
+    },
+
+    // Subsidy (PM Surya Ghar)
+    subsidy: {
+      tag: "Government Subsidy Scheme",
+      title: "PM Surya Ghar: Rooftop Solar",
+      subtitle: "Avail Maximum Government Subsidy up to ₹78,000 directly deposited in your bank account",
+      processHeading: "Simple 6-Step Subsidy Process",
+      steps: [
+        { step: 1, title: "Apply", desc: "Register on PM Surya Ghar portal with MSEDCL consumer number." },
+        { step: 2, title: "Site Survey", desc: "Green Leaf engineers verify rooftop feasibility and sanction." },
+        { step: 3, title: "Installation", desc: "Erection of high-efficiency DCR compliant solar plant." },
+        { step: 4, title: "Inspection", desc: "MSEDCL officials conduct on-site electrical safety inspection." },
+        { step: 5, title: "Net Meter", desc: "Bi-directional net meter installation & commissioning report." },
+        { step: 6, title: "Subsidy", desc: "Direct Bank Transfer (DBT) credited within 30 days into your bank." }
+      ],
+      slabsTitle: "Current Government Subsidy Amounts (Maximum Subsidy)",
+      slabs: [
+        { kw: "1 kW Solar System", amount: "₹30,000", desc: "Ideal for small homes (up to 150 units/month)", badge: "Central Subsidy" },
+        { kw: "2 kW Solar System", amount: "₹60,000", desc: "Ideal for medium households (150-300 units/month)", badge: "Central Subsidy" },
+        { kw: "3 kW to 10 kW System", amount: "₹78,000 (Maximum)", desc: "For large homes & bungalows (300+ units/month)", badge: "Maximum Limit" }
+      ],
+      notice: "Important: Under current MNRE guidelines, subsidy is applicable exclusively on residential properties utilizing ALMM listed DCR (Domestic Content Requirement) solar modules.",
+      docsTitle: "Required Documents for Subsidy Registration",
+      docs: [
+        "Latest MSEDCL Electricity Bill (Consumer No. verified)",
+        "Aadhaar Card of Electricity Bill Holder",
+        "PAN Card",
+        "Cancelled Bank Cheque or Bank Passbook copy (for direct subsidy DBT credit)",
+        "Proof of Roof / Property Ownership",
+        "Passport Size Photograph"
+      ],
+      btnApply: "Get Subsidy Assistance with Green Leaf"
+    },
+
+    // Knowledge Center / Blog (8 Topics)
+    knowledge: {
+      tag: "Solar Information Platform",
+      title: "Knowledge Center & Blog",
+      subtitle: "Comprehensive, expert guides on rooftop solar, government subsidies, engineering standards, and maximizing your ROI.",
+      readGuide: "Read Complete Guide",
+      closeGuide: "Close Guide",
+      categories: ["All", "Subsidy", "Technology", "Planning", "Commercial"]
+    },
+
+    // Reviews ("What Our Clients Say")
+    reviews: {
+      tag: "Customer Trust",
+      title: "What Our Clients Say",
+      subtitle: "Verified customer reviews from homeowners, commercial establishments, and industries in Baramati, Pune, and Maharashtra.",
+      googleRatingText: "Google Business Rating",
+      googleRatingSub: "Based on 100+ verified customer experiences",
+      viewGoogleReviews: "View Google Profile & Reviews",
+      writeReview: "Share Your Feedback"
     },
 
     // Services
@@ -89,57 +219,136 @@ export const translations = {
         {
           id: "residential-rooftop",
           name: "Residential Rooftop Solar",
-          desc: "Custom rooftop solar systems for homes with PM Surya Ghar subsidy support and net metering."
+          desc: "Generate clean electricity from your own rooftop.",
+          fullDesc: "Green Leaf Energy Solution provides customized rooftop solar systems for homes based on electricity consumption, available roof area and customer requirements.",
+          benefits: [
+            "Reduce dependence on grid electricity",
+            "Generate clean energy",
+            "Utilize available rooftop space",
+            "Long-term energy savings",
+            "Professional installation",
+            "Support for applicable government schemes"
+          ],
+          process: "Electricity Bill Analysis → Site Survey → System Design → Quotation → Installation → Inspection/Net Metering Process → Commissioning"
         },
         {
           id: "commercial-solar",
           name: "Commercial Solar",
-          desc: "Reduce operational electricity costs for offices, hospitals, schools, and commercial complexes."
+          desc: "Electricity is a significant operating expense for many businesses.",
+          fullDesc: "A properly designed commercial solar system can help organizations generate a portion of their electricity requirement from renewable energy.",
+          benefitsTitle: "Suitable For:",
+          benefits: [
+            "Offices",
+            "Shops",
+            "Hotels",
+            "Hospitals",
+            "Schools & Colleges",
+            "Warehouses",
+            "Commercial Buildings",
+            "Institutions"
+          ],
+          processTitle: "Our Approach:",
+          process: "We evaluate electricity consumption, sanctioned load, roof area, operating hours and project requirements before recommending a system."
         },
         {
           id: "industrial-solar",
           name: "Industrial Solar",
-          desc: "Heavy-duty high kW solar power installations for factories, warehouses, and manufacturing units."
+          desc: "Green Leaf provides solar solutions for industries with significant electricity consumption.",
+          fullDesc: "Green Leaf provides solar solutions for industries with significant electricity consumption.",
+          benefitsTitle: "Our Industrial Approach:",
+          benefits: [
+            "Load Analysis: Understanding connected and maximum demand.",
+            "Energy Analysis: Studying electricity consumption patterns.",
+            "Site Assessment: Evaluating roof or ground-mounted installation possibilities.",
+            "System Design: Selecting suitable modules, inverters, structures and electrical equipment.",
+            "Project Execution: Installation, testing and commissioning."
+          ],
+          processTitle: "Suitable Applications:",
+          process: "Manufacturing | Processing | Engineering | Warehousing | Industrial Units"
         },
         {
           id: "ground-mounted",
           name: "Ground Mounted Solar Plant",
-          desc: "Utility scale and MW capacity ground mounted solar installations with high-durability structures."
+          desc: "For customers with suitable land availability, ground-mounted solar can provide an effective solution for larger-capacity projects.",
+          fullDesc: "For customers with suitable land availability, ground-mounted solar can provide an effective solution for larger-capacity projects.",
+          benefitsTitle: "Project Components:",
+          benefits: [
+            "Solar PV Modules",
+            "Module Mounting Structures",
+            "DC Cabling",
+            "String/Combiner Systems",
+            "Inverters",
+            "AC/DC Distribution Systems",
+            "Earthing",
+            "Lightning Protection",
+            "Monitoring System",
+            "Civil Foundations"
+          ],
+          processTitle: "Project Engineering:",
+          process: "Site conditions, module layout, structure design, wind conditions, electrical design and maintenance requirements are considered during project planning."
         },
         {
           id: "hybrid-solar",
           name: "Hybrid Solar System",
-          desc: "Smart solar solution combining grid power with battery backup for 24/7 uninterrupted power."
+          desc: "Hybrid systems combine solar generation with battery energy storage and grid supply.",
+          fullDesc: "Hybrid systems combine solar generation with battery energy storage and grid supply.",
+          benefitsTitle: "Applications:",
+          benefits: [
+            "Backup power requirements",
+            "Offices",
+            "Commercial establishments",
+            "Critical loads",
+            "Residential applications",
+            "Energy management"
+          ],
+          processTitle: "Key Benefits:",
+          process: [
+            "Solar energy utilization",
+            "Battery backup",
+            "Energy management",
+            "Reduced dependence on grid during selected operating conditions"
+          ],
+          footerNote: "The system capacity and battery size are selected based on load requirements and backup duration."
         },
         {
-          id: "off-grid-solar",
-          name: "Off Grid Solar",
-          desc: "Independent battery-backed solar systems for remote areas without reliable grid electricity."
+          id: "electrical-contracting",
+          name: "Electrical Contracting Services",
+          desc: "Green Leaf Energy Solution also provides electrical contracting services for residential, commercial and industrial applications.",
+          fullDesc: "Green Leaf Energy Solution also provides electrical contracting services for residential, commercial and industrial applications.",
+          benefitsTitle: "Services:",
+          benefits: [
+            "Electrical installation",
+            "LT electrical works",
+            "HT/LT line-related works",
+            "Distribution systems",
+            "Electrical panels",
+            "Cable laying",
+            "Earthing systems",
+            "Lightning protection",
+            "Electrical testing",
+            "Maintenance works"
+          ],
+          processTitle: "Our Focus:",
+          process: "Safety | Quality | Proper Engineering | Reliable Execution"
         },
         {
-          id: "solar-street-light",
-          name: "Solar Street Light",
-          desc: "Automatic dusk-to-dawn LED solar lights for housing societies, roads, and farmhouses."
-        },
-        {
-          id: "lithium-battery",
-          name: "Lithium Battery Solutions",
-          desc: "Long-life LiFePO4 energy storage systems for solar inverters and backup applications."
-        },
-        {
-          id: "ev-charger",
-          name: "EV Charger Installation",
-          desc: "Solar-compatible AC & DC fast chargers for electric vehicles at homes and commercial spots."
-        },
-        {
-          id: "amc-service",
-          name: "Annual Maintenance Contract (AMC)",
-          desc: "Comprehensive solar panel cleaning, inverter diagnostics, and preventive maintenance packages."
-        },
-        {
-          id: "solar-consultancy",
-          name: "Solar Consultancy",
-          desc: "Expert site feasibility, load calculation, solar ROI audits, and net metering documentation."
+          id: "industrial-electrical",
+          name: "Industrial Electrical Solutions",
+          desc: "Industrial electrical systems require proper planning, protection and execution.",
+          fullDesc: "Industrial electrical systems require proper planning, protection and execution.",
+          benefitsTitle: "Services:",
+          benefits: [
+            "Industrial electrical installation",
+            "Power distribution",
+            "LT panels",
+            "Cable installation",
+            "Earthing",
+            "Lightning protection",
+            "Electrical testing",
+            "Maintenance",
+            "Troubleshooting"
+          ],
+          footerNote: "We assess the site requirement before proposing the appropriate electrical solution."
         }
       ]
     },
@@ -168,119 +377,26 @@ export const translations = {
     // Why Choose Green Leaf
     why: {
       title: "Why Choose Green Leaf Energy Solution?",
-      subtitle: "The trusted choice for over 500+ solar installations across Maharashtra",
+      subtitle: "Engineering integrity, premium components, and reliable local support in Baramati & Pune",
       points: [
-        { title: "Best Quality Panels", desc: "Tier-1 high-efficiency ALMM listed mono-PERC & bifacial solar modules." },
-        { title: "Premium Mounting Structure", desc: "Hot-dip galvanized heavy duty wind-resistant aluminum structures." },
-        { title: "Fast Installation", desc: "Professional installation completed in 3 to 7 working days." },
-        { title: "Net Metering Support", desc: "Complete liaisoning with MSEDCL for bi-directional net meter installation." },
-        { title: "Government Subsidy Assistance", desc: "Seamless application on PM Surya Ghar portal with direct bank credit." },
-        { title: "Product Warranty", desc: "Up to 25 years linear power warranty on panels & 5-10 years on inverters." },
-        { title: "Service Support", desc: "Quick response after-sales maintenance team in Pune & Baramati." },
-        { title: "Professional Engineering", desc: "Designed by experienced electrical engineers following MNRE guidelines." },
-        { title: "Transparent Process", desc: "Zero hidden charges, clear itemized quotation & hassle-free execution." },
-        { title: "End-to-End EPC Solution", desc: "From site survey, design, procurement, erection to commissioning." }
+        { title: "MSEDCL & PM Surya Ghar Approved", desc: "Empanelled vendor with full clearance authority for fast-track net metering." },
+        { title: "18+ Years Electrical Engineering", desc: "Backed by seasoned engineers with deep expertise in power distribution and safety." },
+        { title: "Tier-1 ALMM & DCR Solar Panels", desc: "Only top-rated domestic and international modules ensuring maximum kWh generation." },
+        { title: "Hot-Dip Galvanized Structures", desc: "Heavy-duty rust-resistant structures engineered to withstand 150 km/h wind speeds." },
+        { title: "100% Turnkey Execution", desc: "From technical roof survey to online subsidy deposit, we take care of all paperwork." }
       ]
-    },
-
-    // Subsidy
-    subsidy: {
-      title: "PM Surya Ghar: Muft Bijli Yojana Guide",
-      subtitle: "Claim up to ₹78,000 Direct Government Subsidy for Rooftop Solar",
-      whatIsTitle: "What is PM Surya Ghar?",
-      whatIsDesc: "PM Surya Ghar: Muft Bijli Yojana is a Central Government scheme aiming to provide free electricity to 1 Crore households in India by providing up to ₹78,000 financial subsidy for rooftop solar installation.",
-      slabsTitle: "Subsidy Breakdown",
-      slabs: [
-        { kw: "1 kW System", amount: "₹30,000", desc: "For small homes with ~120 units monthly consumption" },
-        { kw: "2 kW System", amount: "₹60,000", desc: "For medium homes with ~240 units monthly consumption" },
-        { kw: "3 kW to 10 kW System", amount: "₹78,000 (Fixed Max)", desc: "For larger homes & villas with 300+ units consumption" }
-      ],
-      processTitle: "5-Step Application Process",
-      steps: [
-        "Registration on PM Surya Ghar Official Portal with MSEDCL Consumer Number",
-        "Technical Feasibility Survey by Green Leaf Energy Solution Team",
-        "System Erection & Installation by MSEDCL Approved Vendor",
-        "Net Metering Inspection & Commissioning Certificate Issuance",
-        "Direct Subsidy Credit into Customer's Bank Account within 30 Days"
-      ],
-      docsTitle: "Required Documents",
-      docs: [
-        "Latest MSEDCL Electricity Bill",
-        "Aadhaar Card of Bill Holder",
-        "PAN Card",
-        "Cancelled Bank Cheque / Passbook Copy",
-        "Rooftop Property Ownership Document",
-        "Passport Size Photograph"
-      ],
-      ctaBtn: "Get Subsidy Assistance Now"
     },
 
     // Brands
     brands: {
       title: "Brands We Deal In",
-      subtitle: "We use components from industry-leading solar manufacturers"
-    },
-
-    // FAQ
-    faq: {
-      title: "Frequently Asked Questions (FAQ)",
-      subtitle: "Everything you need to know about rooftop solar, net metering & subsidies",
-      items: [
-        {
-          q: "Solar किती वर्ष चालते? (How long does a solar system last?)",
-          a: "Solar panels have a performance lifespan of 25 to 30 years with linear power output warranties. Inverters generally last 8 to 12 years and can be serviced easily."
-        },
-        {
-          q: "Subsidy किती मिळते? (How much subsidy do I get under PM Surya Ghar?)",
-          a: "Under PM Surya Ghar scheme, residential rooftop solar gets ₹30,000 for 1 kW, ₹60,000 for 2 kW, and a maximum of ₹78,000 for 3 kW and above."
-        },
-        {
-          q: "Net Metering म्हणजे काय? (What is Net Metering?)",
-          a: "Net Metering is a bi-directional MSEDCL meter system that records the electricity imported from the grid and exported from your solar system. You only pay for the net units consumed."
-        },
-        {
-          q: "Hybrid आणि On-Grid Solar मध्ये काय फरक आहे? (Difference between On-Grid and Hybrid Solar?)",
-          a: "On-Grid Solar operates connected to MSEDCL grid without batteries (stops during power outages for safety). Hybrid Solar connects to both grid and battery storage, providing 24/7 power backup during outages."
-        },
-        {
-          q: "Battery किती वर्ष टिकते? (How long does a solar battery last?)",
-          a: "Modern Lithium LiFePO4 batteries last 8 to 10 years (3,000+ charge cycles), whereas traditional lead-acid batteries last 3 to 5 years."
-        },
-        {
-          q: "Solar installation ला किती वेळ लागतो? (How much time does solar installation take?)",
-          a: "Physical roof installation takes 2 to 4 days for residential (3-10 kW). Net meter approval & commissioning by MSEDCL typically takes 15 to 30 days."
-        },
-        {
-          q: "Solar system ची warranty किती असते? (What is the solar system warranty?)",
-          a: "Solar panels come with a 25-year performance warranty. On-grid inverters carry 5 to 10 years warranty, and mounting structures carry 10 years warranty."
-        },
-        {
-          q: "Solar maintenance किती लागते? (How much maintenance is required?)",
-          a: "Solar systems require minimal maintenance. Cleaning the panel glass with plain water every 15 days ensures maximum generation. We also offer AMC packages."
-        },
-        {
-          q: "Solar rooftop साठी किती जागा लागते? (How much roof area is needed?)",
-          a: "Roughly 80 to 100 square feet of shade-free rooftop area is required per 1 kW of solar panel installation."
-        },
-        {
-          q: "Solar system मुळे electricity bill किती कमी होऊ शकते? (How much can electricity bill be reduced?)",
-          a: "A properly sized rooftop solar system can reduce your monthly electricity bills by up to 80% to 90%."
-        }
-      ]
-    },
-
-    // Blog
-    blog: {
-      title: "Solar Knowledge Hub & Articles",
-      subtitle: "Expert guides on solar technology, subsidies, panel cleaning, and energy savings",
-      readMore: "Read Full Article",
-      categories: ["All", "Subsidy Guide", "Maintenance", "Technology", "ROI & Savings"]
+      subtitle: "We partner with leading Tier-1 global and Indian solar manufacturers"
     },
 
     // Final CTA
     finalCta: {
-      title: "Start Your Solar Journey Today",
-      text: "Reduce your electricity expenses to near zero and move towards clean, reliable energy with Green Leaf Energy Solution.",
+      title: "Start Your Solar Journey with Green Leaf Today",
+      text: "Transform your empty rooftop into a zero-bill power station. Schedule your complimentary engineering survey now.",
       btnSurvey: "Get Free Site Survey",
       btnQuote: "Get Quotation",
       btnWhatsApp: "WhatsApp Now"
@@ -301,8 +417,6 @@ export const translations = {
       message: "Message / Specific Requirements",
       submitInquiry: "Submit Inquiry",
       successMsg: "Thank you! Our solar expert will contact you shortly.",
-      
-      // Online Quote Form
       quoteTitle: "Request Instant Solar Quote",
       propertyType: "Property Type",
       solarReq: "Required Solar Capacity (kW)",
@@ -310,12 +424,10 @@ export const translations = {
       contactMethod: "Preferred Contact Method",
       methods: ["Phone Call", "WhatsApp", "Email"],
       getQuoteBtn: "Get My Solar Quote",
-
-      // Complaint Ticket
       complaintTitle: "Register a Complaint / Issue",
       customerId: "Customer ID / Project ID",
       category: "Issue Category",
-      complaintSuccessMsg: "Complaint Registered Successfully! Your Complaint Ticket Reference Number is:"
+      complaintSuccessMsg: "Complaint Registered Successfully! Reference Number:"
     },
 
     // Footer
@@ -336,12 +448,14 @@ export const translations = {
       home: "मुख्य पृष्ठ",
       about: "आमच्याबद्दल",
       services: "सेवा",
-      projects: "प्रकल्प",
+      journey: "प्रकल्प प्रक्रिया",
+      projects: "पूर्ण झालेले प्रकल्प",
       calculator: "सोलर कॅल्क्युलेटर",
       subsidy: "पीएम सूर्य घर सबसिडी",
+      knowledge: "माहिती केंद्र",
       gallery: "गॅलरी",
       reviews: "ग्राहकांचे अभिप्राय",
-      blog: "ब्लॉग व माहिती",
+      blog: "माहिती केंद्र (Blog)",
       careers: "कारकीर्द (Careers)",
       franchise: "फ्रँचायझी",
       dealer: "डीलर नोंदणी",
@@ -359,53 +473,180 @@ export const translations = {
     // Hero Section
     hero: {
       companyName: "ग्रीन लीफ एनर्जी सोल्युशन",
-      tagline: "स्वच्छ ऊर्जेने उज्ज्वल भविष्याकडे",
-      subHeading: "MSEDCL मान्यताप्राप्त सोलर EPC कंपनी",
-      additionalMsg: "वीज बिलात मोठी बचत करा. स्वतःची स्वच्छ ऊर्जा तयार करा.",
+      tagline: "तुमची विश्वासार्ह कंपनी",
+      subHeading: "सोलर व इलेक्ट्रिकल कॉन्ट्रॅक्टिंग कंपनी",
+      additionalMsg: "MSEDCL मान्यताप्राप्त सोलर EPC व्हेंडर व परवानाधारक इलेक्ट्रिकल कॉन्ट्रॅक्टर. सेवा क्षेत्रे: पुणे | बारामती | अहिल्यानगर | सोलापूर | लातूर | नांदेड, महाराष्ट्र.",
       btnSiteSurvey: "मोफत साइट सर्व्हे मिळवा",
       btnGetQuote: "कोटेशन मिळवा",
       btnWhatsApp: "WhatsApp करा",
-      experienceBadge: "१८ वर्षांचा इलेक्ट्रिकल इंजिनिअरिंग अनुभव"
+      experienceBadge: "१८+ वर्षांचा इलेक्ट्रिकल इंजिनिअरिंग अनुभव"
     },
 
-    // Trust Credentials
+    // Trust Credentials (6 Badges)
     trust: {
-      title: "विश्वासार्ह व शासकीय मान्यताप्राप्त सोलर EPC पार्टनर",
-      msedcl: "MSEDCL मान्यताप्राप्त व्हेंडर",
-      pmSuryaGhar: "पीएम सूर्य घर अधिकृत व्हेंडर",
-      iso: "ISO 9001:2015 प्रमाणित",
-      engineers: "अनुभवी इंजिनियर्स",
-      subsidy: "पूर्ण सबसिडी सहाय्य",
-      installation: "संपूर्ण इन्स्टॉलेशन सुविधा"
+      title: "शासकीय मान्यता व विश्वासार्हता",
+      subtitle: "प्रमाणित गुणवत्ता, उच्च इंजिनिअरिंग दर्जा आणि सुरक्षितता",
+      badge1: {
+        title: "ISO 9001:2015 प्रमाणित",
+        desc: "प्रमाणित गुणवत्ता व्यवस्थापन प्रणाली"
+      },
+      badge2: {
+        title: "MSEDCL मान्यताप्राप्त",
+        desc: "MSEDCL अधिकृत नेट मीटरिंग पार्टनर"
+      },
+      badge3: {
+        title: "PM सूर्य घर अधिकृत व्हेंडर",
+        desc: "शासकीय सबसिडी पोर्टल अधिकृत व्हेंडर"
+      },
+      badge4: {
+        title: "MNRE/DCR प्रमाणित उत्पादने",
+        desc: "उच्च कार्यक्षम DCR प्रमाणित सोलर पॅनेल्स"
+      },
+      badge5: {
+        title: "उत्कृष्ट इन्स्टॉलेशन",
+        desc: "मजबूत स्ट्रक्चर व व्यावसायिक इन्स्टॉलेशन"
+      },
+      badge6: {
+        title: "व्यावसायिक इलेक्ट्रिकल सेवा",
+        desc: "१८+ वर्षांचा इलेक्ट्रिकल कॉन्ट्रॅक्टिंग अनुभव"
+      }
     },
 
     // Lead Generation Strip
     leadStrip: {
-      heading: "सोलर बसवण्यासाठी तयार आहात का?",
-      text: "मोफत साइट सर्व्हे मिळवा आणि तुमच्या मासिक वीज बिलात किती बचत होऊ शकते ते जाणून घ्या.",
+      heading: "वीज बिल शून्यावर आणण्यासाठी सोलर बसवणार आहात का?",
+      text: "आमच्या सोलर तज्ज्ञांकडून मोफत साइट सर्व्हे मिळवा आणि तुमच्या छतावर किती वीज निर्माण होईल ते समजून घ्या.",
       btnSurvey: "मोफत साइट सर्व्हे मिळवा",
       btnWhatsApp: "WhatsApp करा"
     },
 
     // About Section
     about: {
-      title: "ग्रीन लीफ एनर्जी सोल्युशन बद्दल",
-      subtitle: "महाराष्ट्रात उच्च कार्यक्षम सोलर इंजिनिअरिंग",
-      description: "ग्रीन लीफ एनर्जी सोल्युशन ही बारामती, पुणे व आसपासच्या परिसरात कार्यरत असणारी MSEDCL मान्यताप्राप्त सोलर EPC कंपनी आहे. १८ वर्षांच्या इलेक्ट्रिकल अनुभवासह आम्ही उच्च दर्जाचे सोलर रूफटॉप व व्यावसायिक सोलर प्रकल्प साकारतो.",
-      missionTitle: "आमचे ध्येय (Mission)",
-      missionText: "ग्राहकांचा विजेवरील खर्च कमी करून त्यांना शाश्वत, स्वस्त व विश्वासार्ह सौर ऊर्जा उपलब्ध करून देणे.",
+      title: "आमच्याबद्दल",
+      companyName: "ग्रीन लीफ एनर्जी सोल्युशन",
+      headline: "सोलर आणि इलेक्ट्रिकल कॉन्ट्रॅक्टिंग तज्ञ",
+      mainStatement: "ग्रीन लीफ एनर्जी सोल्युशन ही बारामती, महाराष्ट्र येथे स्थित एक सोलर आणि इलेक्ट्रिकल कॉन्ट्रॅक्टिंग कंपनी आहे. आम्ही घरगुती, व्यावसायिक आणि औद्योगिक ग्राहकांसाठी सोलर आणि इलेक्ट्रिकल सोल्युशन्स पुरवतो.",
+      experienceText: "आमची कार्यपद्धती इंजिनिअरिंग ज्ञान, दर्जेदार उत्पादने, व्यावसायिक इन्स्टॉलेशन आणि ग्राहकांच्या आधारावर अवलंबून आहे, ज्यामुळे आम्ही विश्वासार्ह ऊर्जा सोल्युशन्स देऊ शकतो.",
       visionTitle: "आमची दृष्टी (Vision)",
-      visionText: "सौर ऊर्जेच्या मदतीने प्रदूषणमुक्त व स्वच्छ भविष्याची निर्मिती करणे.",
-      whyTitle: "आम्हालाच का निवडावे?",
+      visionText: "महाराष्ट्रभर एक विश्वासार्ह सोलर आणि इलेक्ट्रिकल सोल्यूशन प्रदाता बनणे.",
+      missionTitle: "आमचे ध्येय (Mission)",
+      missionText: "ग्राहकांना ऊर्जेचा खर्च कमी करण्यात आणि स्वच्छ ऊर्जेचा अवलंब करण्यास मदत करणारे सुरक्षित आणि तांत्रिकदृष्ट्या सक्षम सोलर व इलेक्ट्रिकल सोल्युशन्स प्रदान करणे.",
+      qualityTitle: "गुणवत्ता धोरण (Quality Policy)",
+      qualityText: "आम्ही ISO 9001:2015, MNRE आणि CEA च्या सर्व नियमांचे काटेकोर पालन करतो. प्रत्येक सोलर सिस्टीममध्ये गॅल्वनाइज्ड स्ट्रक्चर, उच्च दर्जाचे सर्ज प्रोटेक्शन व सुरक्षित वायरिंग केली जाते.",
+      valuesTitle: "आमची मूल्ये",
+      values: "गुणवत्ता | विश्वासार्हता | पारदर्शकता | सुरक्षितता | ग्राहकांचे समाधान",
       highlights: [
-        "१८ वर्षांचा इलेक्ट्रिकल अनुभव",
-        "तज्ज्ञ इंजिनियर्सची टीम",
-        "दर्जेदार रूफटॉप इन्स्टॉलेशन",
-        "१००% पारदर्शक प्रक्रिया",
-        "विक्रीनंतर तत्पर सर्व्हिस सपोर्ट",
-        "सरकारी सबसिडी मिळवून देण्यास पूर्ण मदत",
-        "MSEDCL नेट मीटरिंग मंजुरी"
+        "१८+ वर्षांचा इलेक्ट्रिकल व सोलर EPC अनुभव",
+        "MSEDCL मान्यताप्राप्त अधिकृत व्हेंडर",
+        "पीएम सूर्य घर पोर्टलवर अधिकृत नोंदणीकृत",
+        "अनुभवी व प्रमाणित इंजिनियर्सची इन-हाउस टीम",
+        "सर्व्हेपासून सबसिडी खात्यात जमा होईपर्यंत पूर्ण काम",
+        "५००+ समाधानी घरगुती व व्यावसायिक ग्राहक",
+        "बारामती व पुण्यात स्थानिक तत्पर सर्व्हिस"
       ]
+    },
+
+    // Solar Project Journey (10 Steps)
+    journey: {
+      tag: "संपूर्ण EPC कार्यपद्धती",
+      title: "Solar Project Journey",
+      subtitle: "पहिली चौकशी ते २५ वर्षे मोफत वीज — संपूर्ण प्रक्रिया ग्रीन लीफ सांभाळते.",
+      steps: [
+        { step: 1, name: "Enquiry", desc: "प्राथमिक चर्चा, मासिक वीज बिलाची पाहणी आणि गरजेनुसार योग्य सल्ला." },
+        { step: 2, name: "Site Survey", desc: "छताची प्रत्यक्ष पाहणी, सावली विश्लेषण (Shadow analysis) व स्ट्रक्चर तपासणी." },
+        { step: 3, name: "System Design", desc: "कमाल वीज निर्मितीसाठी 3D डिझाईन व इलेक्ट्रिकल वायरिंग प्लॅन." },
+        { step: 4, name: "Quotation", desc: "तपशीलवार, पारदर्शक आणि सर्व साहित्य नमूद असणारे अधिकृत कोटेशन." },
+        { step: 5, name: "Loan/Subsidy Assistance", desc: "पीएम सूर्य घर पोर्टलवर नोंदणी व कमी व्याजदरात सोलर लोन सहाय्य." },
+        { step: 6, name: "Installation", desc: "मजबूत गॅल्वनाइज्ड स्ट्रक्चर, सोलर पॅनेल्स, इन्व्हर्टर व अर्थिंग काम." },
+        { step: 7, name: "MSEDCL Process", desc: "MSEDCL कडे वर्क कम्प्लीशन रिपोर्ट सादर करणे व अधिकृत मंजुरी घेणे." },
+        { step: 8, name: "Net Metering", desc: "MSEDCL द्वारे बाय-डायरेक्शनल नेट मीटर बसवणे आणि टेस्टिंग करणे." },
+        { step: 9, name: "Commissioning", desc: "सुरक्षा तपासणी, सिस्टीम चालू करणे व ग्रीडशी यशस्वी जोडणी." },
+        { step: 10, name: "After-Sales Support", desc: "मोबाईल ॲपवर जनरेशन मॉनिटरिंग, नियमित देखभाल व २५ वर्षे वॉरंटी सपोर्ट." }
+      ]
+    },
+
+    // Completed Projects
+    projects: {
+      tag: "प्रत्यक्ष काम",
+      title: "पूर्ण झालेले प्रकल्प (Completed Projects)",
+      subtitle: "ग्रीन लीफ एनर्जी सोल्युशनने बारामती, पुणे व परिसरात उभारलेल्या प्रत्यक्ष सोलर प्रकल्पांची माहिती.",
+      filterAll: "सर्व प्रकल्प",
+      filterRes: "घरगुती सोलर (Residential)",
+      filterCom: "व्यावसायिक (Commercial)",
+      filterInd: "औद्योगिक (Industrial)",
+      detailsTitle: "प्रकल्पाचे तांत्रिक तपशील",
+      stagePhotosTitle: "इन्स्टॉलेशन टप्पे व छायाचित्रे",
+      stages: {
+        before: "इन्स्टॉलेशन आधी (Before)",
+        structure: "स्ट्रक्चर (Structure)",
+        panels: "पॅनेल्स (Panels)",
+        inverter: "इन्व्हर्टर (Inverter)",
+        acdcDb: "AC/DC DB बॉक्स",
+        final: "अंतिम काम (Final)"
+      },
+      specLabels: {
+        capacity: "प्रकल्प क्षमता",
+        location: "ठिकाण",
+        system: "सिस्टीम प्रकार",
+        module: "मॉड्युल (ब्रँड + Wp)",
+        inverter: "इन्व्हर्टर (ब्रँड)",
+        date: "इन्स्टॉलेशन दिनांक"
+      },
+      ctaQuote: "तुमच्या छतावर असाच सोलर प्लँट बसवायचा आहे का?"
+    },
+
+    // Subsidy (PM Surya Ghar)
+    subsidy: {
+      tag: "शासकीय योजना",
+      title: "PM Surya Ghar – Rooftop Solar",
+      subtitle: "घराच्या छतावर सोलर बसवा आणि मिळवा ₹७८,००० पर्यंत थेट शासकीय सबसिडी",
+      processHeading: "सोपी ६ टप्प्यांची सबसिडी प्रक्रिया",
+      steps: [
+        { step: 1, title: "1. Apply", desc: "MSEDCL ग्राहक क्रमांकासह पीएम सूर्य घर अधिकृत पोर्टलवर नोंदणी." },
+        { step: 2, title: "2. Site Survey", desc: "ग्रीन लीफ इंजिनियर्सद्वारे छताची पाहणी व फिजिबिलिटी मंजुरी." },
+        { step: 3, title: "3. Installation", desc: "उच्च दर्जाच्या DCR सोलर पॅनेल्स व सिस्टीमचे मजबूत इन्स्टॉलेशन." },
+        { step: 4, title: "4. Inspection", desc: "MSEDCL अधिकाऱ्यांकडून प्रत्यक्ष साईटवर जाऊन सुरक्षा तपासणी." },
+        { step: 5, title: "5. Net Meter", desc: "MSEDCL नेट मीटर बसवणे आणि कमिशनिंग रिपोर्ट जारी करणे." },
+        { step: 6, title: "6. Subsidy", desc: "३० दिवसांच्या आत थेट ग्राहकाच्या बँक खात्यात सबसिडी रक्कम जमा (DBT)." }
+      ],
+      slabsTitle: "सध्याच्या नियमांनुसार सबसिडी रक्कम (कमाल सबसिडी)",
+      slabs: [
+        { kw: "1 kW Solar System", amount: "₹30,000", desc: "लहान घरांसाठी (~150 युनिट्स पर्यंत मासिक वापर)", badge: "केंद्र सबसिडी" },
+        { kw: "2 kW Solar System", amount: "₹60,000", desc: "मध्यम घरांसाठी (150 ते 300 युनिट्स वापर)", badge: "केंद्र सबसिडी" },
+        { kw: "3 kW ते 10 kW System", amount: "₹78,000 (कमाल मर्यादा)", desc: "मोठी घरे व बंगल्यांसाठी (300+ युनिट्स वापर)", badge: "कमाल सबसिडी" }
+      ],
+      notice: "महत्त्वाची नोंद: सरकारी नियमांनुसार सबसिडी मिळवण्यासाठी भारतात बनवलेले (DCR) व ALMM प्रमाणित सोलर पॅनेल्स वापरणे बंधनकारक आहे.",
+      docsTitle: "सबसिडी नोंदणीसाठी आवश्यक कागदपत्रे",
+      docs: [
+        "चालू महिन्याचे MSEDCL वीज बिल (ग्राहक क्रमांक स्पष्ट असावा)",
+        "वीज बिल धारकाचे आधार कार्ड",
+        "पॅन कार्ड",
+        "बँक पासबुक किंवा कॅन्सल चेकची प्रत (थेट सबसिडी जमा होण्यासाठी)",
+        "जागा / घर मालकीचा पुरावा",
+        "पासपोर्ट साईज फोटो"
+      ],
+      btnApply: "ग्रीन लीफच्या मदतीने सबसिडी मिळवा"
+    },
+
+    // Knowledge Center / Blog (8 Topics)
+    knowledge: {
+      tag: "सोलर माहिती व्यासपीठ",
+      title: "Knowledge Center (माहिती केंद्र व ब्लॉग)",
+      subtitle: "सोलर टेक्नॉलॉजी, सरकारी सबसिडी, नेट मीटरिंग आणि योग्य सोलर निवड यावरील सविस्तर मार्गदर्शक लेख.",
+      readGuide: "संपूर्ण माहिती वाचा",
+      closeGuide: "बंद करा",
+      categories: ["सर्व", "सबसिडी", "तंत्रज्ञान", "नियोजन", "उद्योग"]
+    },
+
+    // Reviews ("What Our Clients Say")
+    reviews: {
+      tag: "ग्राहकांचा विश्वास",
+      title: "What Our Clients Say (ग्राहकांचे अभिप्राय)",
+      subtitle: "बारामती, पुणे व आसपासच्या परिसरातील आमचे समाधानी ग्राहक काय म्हणतात ते पहा.",
+      googleRatingText: "गुगल बिझनेस रेटिंग",
+      googleRatingSub: "१००+ हून अधिक ग्राहकांच्या अनुभवांवर आधारित",
+      viewGoogleReviews: "गुगल प्रोफाईल व सर्व रिव्ह्यूज पहा",
+      writeReview: "तुमचा अभिप्राय नोंदवा"
     },
 
     // Services
@@ -441,34 +682,44 @@ export const translations = {
           desc: "ग्रिड व बॅटरीचा मेळ घालणारी २४x७ अखंड वीज देणारी सोलर सिस्टीम."
         },
         {
-          id: "off-grid-solar",
-          name: "ऑफ ग्रिड सोलर",
-          desc: "ग्रिड वीज नसलेल्या किंवा दुर्गम भागासाठी बॅटरीवर चालणारे सोलर."
+          id: "electrical-contracting",
+          name: "इलेक्ट्रिकल कॉन्ट्रॅक्टिंग सर्व्हिसेस",
+          desc: "ग्रीन लीफ एनर्जी सोल्युशन घरगुती, व्यावसायिक आणि औद्योगिक गरजांनुसार इलेक्ट्रिकल कंत्राटी कामे करते.",
+          fullDesc: "ग्रीन लीफ एनर्जी सोल्युशन घरगुती, व्यावसायिक आणि औद्योगिक गरजांनुसार इलेक्ट्रिकल कंत्राटी कामे करते.",
+          benefitsTitle: "सेवा:",
+          benefits: [
+            "इलेक्ट्रिकल इन्स्टॉलेशन",
+            "LT इलेक्ट्रिकल कामे",
+            "HT/LT लाईन संबंधित कामे",
+            "डिस्ट्रिब्युशन सिस्टीम",
+            "इलेक्ट्रिकल पॅनेल",
+            "केबल लेईंग",
+            "अर्थिंग सिस्टीम",
+            "लायटनिंग प्रोटेक्शन",
+            "इलेक्ट्रिकल टेस्टिंग",
+            "देखभाल कामे"
+          ],
+          processTitle: "आमची खासियत:",
+          process: "सुरक्षितता | गुणवत्ता | योग्य इंजिनीअरिंग | विश्वासार्ह अंमलबजावणी"
         },
         {
-          id: "solar-street-light",
-          name: "सोलर स्ट्रीट लाईट",
-          desc: "सोसायट्या, रस्ते व फार्महाऊससाठी स्वयंचलित सोलर लाईट्स."
-        },
-        {
-          id: "lithium-battery",
-          name: "लिथियम बॅटरी सोल्युशन्स",
-          desc: "दीर्घकाळ टिकणाऱ्या LiFePO4 लिथियम सोलर बॅटऱ्या."
-        },
-        {
-          id: "ev-charger",
-          name: "ईव्ही चार्जर इन्स्टॉलेशन",
-          desc: "इलेक्ट्रिक वाहनांसाठी सोलर-सुसंगत फास्ट चार्जिंग स्टेशन."
-        },
-        {
-          id: "amc-service",
-          name: "वार्षिक देखभाल कंत्राट (AMC)",
-          desc: "सोलर पॅनेल स्वच्छता, इनव्हर्टर तपासणी व नियमित मेंटेनन्स सेवा."
-        },
-        {
-          id: "solar-consultancy",
-          name: "सोलर कन्सल्टन्सी व सल्ला",
-          desc: "जागेची पाहणी, लोड कॅल्क्युलेशन व तांत्रिक सल्लागार सेवा."
+          id: "industrial-electrical",
+          name: "इंडस्ट्रियल इलेक्ट्रिकल सोल्युशन्स",
+          desc: "औद्योगिक इलेक्ट्रिकल सिस्टीमसाठी योग्य नियोजन, संरक्षण आणि अंमलबजावणी आवश्यक असते.",
+          fullDesc: "औद्योगिक इलेक्ट्रिकल सिस्टीमसाठी योग्य नियोजन, संरक्षण आणि अंमलबजावणी आवश्यक असते.",
+          benefitsTitle: "सेवा:",
+          benefits: [
+            "इंडस्ट्रियल इलेक्ट्रिकल इन्स्टॉलेशन",
+            "पॉवर डिस्ट्रिब्युशन",
+            "LT पॅनेल्स",
+            "केबल इन्स्टॉलेशन",
+            "अर्थिंग",
+            "लायटनिंग प्रोटेक्शन",
+            "इलेक्ट्रिकल टेस्टिंग",
+            "मेंटेनन्स (देखभाल)",
+            "ट्रबलशूटिंग (दुरुस्ती)"
+          ],
+          footerNote: "आम्ही योग्य इलेक्ट्रिकल सोल्यूशन सुचविण्यापूर्वी साइटच्या गरजांचे मूल्यांकन करतो."
         }
       ]
     },
@@ -476,20 +727,20 @@ export const translations = {
     // Calculator
     calculator: {
       title: "सोलर बचत कॅल्क्युलेटर",
-      subtitle: "तुमच्या विजेच्या बिलावरून सोलर क्षमता, निर्मिती व वार्षिक बचत आणा",
+      subtitle: "तुमच्या विजेच्या वापरानुसार आवश्यक सोलर क्षमता, निर्मिती व पैशांची बचत जाणून घ्या",
       billLabel: "मासिक वीज बिल (₹)",
-      roofTypeLabel: "छताचा प्रकार (Roof Type)",
-      roofTypes: ["सिमेंट आरसीसी छत (RCC Flat Roof)", "पत्र्याची शेड (Tin Shed)", "कौलारू छत (Tiled)", "जमीन (Ground)"],
-      locationLabel: "शहर / जिल्हा",
-      calculateBtn: "सोलर बचत मोजा",
-      resultsTitle: "तुमचा अंदाजित सोलर अहवाल",
-      recCapacity: "आवश्यक सोलर क्षमता",
-      estGen: "अंदाजित मासिक वीज निर्मिती",
-      estSavings: "अंदाजित वार्षिक बचत",
-      estPayback: "पैशांची परतफेड कालावधी",
-      estArea: "लागणारी छताची जागा",
-      disclaimer: "टीप: हे आकडे अंदाजित आहेत. प्रत्यक्ष बचत सूर्याचा प्रकाश, छताची दिशा व महावितरणच्या मंजुरीवर अवलंबून असते.",
-      promptTitle: "तुमच्या जागेसाठी अचूक गणना हवी आहे का?",
+      roofTypeLabel: "छताचा प्रकार",
+      roofTypes: ["आरसीसी स्लॅब (RCC Flat Roof)", "धातूचा पत्रा (Metal Tin Shed)", "कौैलारू छत (Tiled Roof)", "जमीन (Ground Area)"],
+      locationLabel: "जिल्हा / ठिकाण",
+      calculateBtn: "बचत मोजा",
+      resultsTitle: "सोलर अंदाज पत्रक",
+      recCapacity: "शिफारस केलेली क्षमता",
+      estGen: "अंदाजे मासिक वीज निर्मिती",
+      estSavings: "अंदाजे वार्षिक पैशांची बचत",
+      estPayback: "खर्च परत मिळण्याचा कालावधी",
+      estArea: "लागणारी अंदाजे जागा",
+      disclaimer: "टीप: वरील आकडे महाराष्ट्रातील सरासरी सूर्यप्रकाशावर आधारित आहेत. प्रत्यक्ष बचत छताची दिशा व सावलीवर अवलंबून असते.",
+      promptTitle: "तुमच्या छतासाठी अचूक अंदाज हवा आहे का?",
       getSurveyBtn: "मोफत साइट सर्व्हे मिळवा",
       getQuoteBtn: "कोटेशन मिळवा"
     },
@@ -497,119 +748,26 @@ export const translations = {
     // Why Choose Green Leaf
     why: {
       title: "ग्रीन लीफ एनर्जी सोल्युशनच का?",
-      subtitle: "महाराष्ट्रातील ५०० हून अधिक समाधानी ग्राहकांचा विश्वास",
+      subtitle: "इंजिनिअरिंग दर्जा, विश्वासार्ह साहित्य आणि स्थानिक बारामती व पुणे येथील तत्पर सर्व्हिस",
       points: [
-        { title: "उत्कृष्ट दर्जाचे सोलर पॅनेल्स", desc: "Tier-1 उच्च कार्यक्षमतेचे ALMM मान्यताप्राप्त पॅनेल्स." },
-        { title: "मजबूत माउंटिंग स्ट्रक्चर", desc: "हवामानास तोंड देणारे हॉट-डिप गॅल्व्हनाइज्ड स्ट्रक्चर." },
-        { title: "जलद इन्स्टॉलेशन", desc: "३ ते ७ दिवसांत व्यावसायिक इन्स्टॉलेशन पूर्ण." },
-        { title: "नेट मीटरिंग सहकार्य", desc: "MSEDCL सोबत द्विदिशात्मक नेट मीटरसाठी पूर्ण सहकार्य." },
-        { title: "सरकारी सबसिडी मदत", desc: "पीएम सूर्य घर पोर्टलवर थेट बँक खात्यात सबसिडी मिळवून देणे." },
-        { title: "उत्पादन वॉरंटी", desc: "पॅनेल्सवर २५ वर्षे आणि इनव्हर्टरवर ५-१० वर्षे वॉरंटी." },
-        { title: "सर्व्हिस सपोर्ट", desc: "पुणे व बारामतीत तत्पर विक्रीनंतरची सेवा." },
-        { title: "व्यावसायिक इंजिनिअरिंग", desc: "MNRE नियमांनुसार इंजिनियर्सद्वारे डिझाइन." },
-        { title: "पारदर्शक प्रक्रिया", desc: "कोणतेही लपवलेले शुल्क नाही, स्पष्ट कोटेशन." },
-        { title: "संपूर्ण EPC सोल्युशन", desc: "सर्व्हे, डिझाइन, खरेदी, उभारणी ते कमिशनिंग." }
+        { title: "MSEDCL व PM सूर्य घर अधिकृत", desc: "शासकीय नियमांनुसार थेट सबसिडी व वेगवान नेट मीटरिंग मंजुरी." },
+        { title: "१८+ वर्षांचा इलेक्ट्रिकल अनुभव", desc: "इलेक्ट्रिकल क्षेत्रातील तज्ज्ञ इंजिनियर्सद्वारे सुरक्षित उभारणी." },
+        { title: "Tier-1 ALMM व DCR पॅनेल्स", desc: "कमाल वीज निर्मितीसाठी सर्वोत्तम दर्जाचे प्रमाणित सोलर पॅनेल्स." },
+        { title: "गॅल्वनाइज्ड मजबूत स्ट्रक्चर", desc: "१५० किमी/तास वाऱ्याचा वेग सहन करू शकणारे गंजरोधक स्ट्रक्चर." },
+        { title: "१००% संपूर्ण काम आमचे", desc: "साइट सर्व्हे, डिझाईन, इन्स्टॉलेशन ते सबसिडी खात्यात येईपर्यंत." }
       ]
-    },
-
-    // Subsidy
-    subsidy: {
-      title: "पीएम सूर्य घर: मोफत वीज योजना माहिती",
-      subtitle: "सोलर रूफटॉपसाठी केंद्र सरकारकडून ₹७८,००० पर्यंत थेट सबसिडी मिळवा",
-      whatIsTitle: "पीएम सूर्य घर योजना काय आहे?",
-      whatIsDesc: "पीएम सूर्य घर: मोफत वीज योजना ही केंद्र सरकारची योजना असून देशातील १ कोटी कुटुंबांना मोफत वीज देणे आणि ₹७८,००० पर्यंत आर्थिक अनुदान देण्याचे उद्दिष्ट आहे.",
-      slabsTitle: "सबसिडीचे स्वरूप (Subsidy Slabs)",
-      slabs: [
-        { kw: "१ किलोवॉट (1 kW)", amount: "₹३०,०००", desc: "दरमहा ~१२० युनिट्स वापर असलेल्या छोट्या घरांसाठी" },
-        { kw: "२ किलोवॉट (2 kW)", amount: "₹६०,०००", desc: "दरमहा ~२४० युनिट्स वापर असलेल्या मध्यम घरांसाठी" },
-        { kw: "३ kW ते १० kW", amount: "₹७८,००० (कमाल सबसिडी)", desc: "दरमहा ३००+ युनिट्स वापर असलेल्या मोठ्या घरांसाठी" }
-      ],
-      processTitle: "सबसिडी मिळवण्याची ५-टप्पे प्रक्रिया",
-      steps: [
-        "MSEDCL ग्राहकांकासह पीएम सूर्य घर पोर्टलवर नोंदणी करणे",
-        "ग्रीन लीफ टीमकडून तांत्रिक feasibility सर्व्हे",
-        "MSEDCL मान्यताप्राप्त व्हेंडरकडून सिस्टीम बसवणे",
-        "नेट मीटर तपासणी व कमिशनिंग प्रमाणपत्र मिळणे",
-        "३० दिवसांच्या आत थेट बँक खात्यात सबसिडी जमा होणे"
-      ],
-      docsTitle: "आवश्यक कागदपत्रे",
-      docs: [
-        "नवीनतम MSEDCL वीज बिल",
-        "वीज बिल धारकाचे आधार कार्ड",
-        "पॅन कार्ड",
-        "बँक पासबुक / कॅन्सल चेक",
-        "जागेचा / छताचा मालकी हक्क पुरावा",
-        "पासपोर्ट साईज फोटो"
-      ],
-      ctaBtn: "सबसिडीसाठी मदत मिळवा"
     },
 
     // Brands
     brands: {
-      title: "आम्ही वापरणारे नामांकित ब्रँड्स",
-      subtitle: "आम्ही उद्योगातील सर्वोत्तम व विश्वासार्ह सोलर उपकरणांचा वापर करतो"
-    },
-
-    // FAQ
-    faq: {
-      title: "सतत विचारले जाणारे प्रश्न (FAQ)",
-      subtitle: "सोलर, सबसिडी व नेट मीटरिंगबद्दल सर्व शंकांचे निरसन",
-      items: [
-        {
-          q: "Solar किती वर्ष चालते?",
-          a: "सोलर पॅनेल्सचे आयुष्य २५ ते ३० वर्षे असते आणि त्यांना २५ वर्षांची पॉवर वॉरंटी असते. इनव्हर्टर साधारण ८ ते १२ वर्षे चालतात."
-        },
-        {
-          q: "Subsidy किती मिळते?",
-          a: "पीएम सूर्य घर योजनेअंतर्गत १ kW साठी ₹३०,०००, २ kW साठी ₹६०,००० आणि ३ kW किंवा त्याहून अधिक साठी कमाल ₹७८,००० सबसिडी मिळते."
-        },
-        {
-          q: "Net Metering म्हणजे काय?",
-          a: "नेट मीटरिंग ही महावितरणची (MSEDCL) दोन मार्गी मीटर सिस्टीम आहे, जी तुम्ही वापरलेली व सोलरने तयार करून ग्रिडला दिलेली वीज मोजते."
-        },
-        {
-          q: "Hybrid आणि On-Grid Solar मध्ये काय फरक आहे?",
-          a: "ऑन-ग्रिड सोलर बॅटरीशिवाय ग्रिडला जोडलेले असते (लाइट गेल्यावर बंद होते). हायब्रिड सोलरमध्ये बॅटरी बॅकअप असतो, त्यामुळे लाइट गेल्यावरही वीज चालू राहते."
-        },
-        {
-          q: "Battery किती वर्ष टिकते?",
-          a: "आधुनिक लिथियम (LiFePO4) बॅटऱ्या ८ ते १० वर्षे टिकतात, तर जुन्या लेड-ॲसिड बॅटऱ्या ३ ते ५ वर्षे टिकतात."
-        },
-        {
-          q: "Solar installation ला किती वेळ लागतो?",
-          a: "छतावर पॅनेल बसवण्याचे काम २ ते ४ दिवसांत पूर्ण होते. नेट मीटरिंग व महावितरण मंजुरीस १५ ते ३० दिवस लागतात."
-        },
-        {
-          q: "Solar system ची warranty किती असते?",
-          a: "सोलर पॅनेलला २५ वर्षांची वॉरंटी असते, इनव्हर्टरला ५ ते १० वर्षे आणि स्ट्रक्चरला १० वर्षांची वॉरंटी असते."
-        },
-        {
-          q: "Solar maintenance किती लागते?",
-          a: "सोलरला अतिशय कमी मेंटेनन्स लागतो. दर १५ दिवसांनी पॅनेल साध्या पाण्याने स्वच्छ ठेवणे पुरेसे असते. आम्ही AMC सेवाही देतो."
-        },
-        {
-          q: "Solar rooftop साठी किती जागा लागते?",
-          a: "प्रत्येक १ किलोवॉट (1 kW) सोलरसाठी साधारण ८० ते १०० स्क्वेअर फूट मोकळी छताची जागा लागते."
-        },
-        {
-          q: "Solar system मुळे electricity bill किती कमी होऊ शकते?",
-          a: "योग्य क्षमतेची सोलर सिस्टीम बसवल्यास तुमचे मासिक वीज बिल ८०% ते ९०% पर्यंत कमी होऊ शकते."
-        }
-      ]
-    },
-
-    // Blog
-    blog: {
-      title: "सोलर ब्लॉग व माहिती केंद्र",
-      subtitle: "सोलर तंत्रज्ञान, बचत, मेंटेनन्स व सबसिडीबद्दल सविस्तर लेख",
-      readMore: "पूर्ण लेख वाचा",
-      categories: ["सर्व", "सबसिडी मार्गदर्शन", "देखभाल", "तंत्रज्ञान", "बचत व परतावा"]
+      title: "आम्ही वापरत असलेले ब्रँड्स",
+      subtitle: "देश-विदेशातील नामांकित व खात्रीशीर सोलर उत्पादक"
     },
 
     // Final CTA
     finalCta: {
       title: "आजच तुमचा सोलर प्रवास सुरू करा",
-      text: "ग्रीन लीफ एनर्जी सोल्युशनसोबत विजेचे बिल जवळपास शून्य करा आणि स्वच्छ ऊर्जेकडे पाऊल टाका.",
+      text: "तुमचे वीज बिल शून्यावर आणा आणि स्वच्छ ऊर्जेचा लाभ घ्या. आमच्या इंजिनिअरकडून मोफत साइट सर्व्हे मिळवा.",
       btnSurvey: "मोफत साइट सर्व्हे मिळवा",
       btnQuote: "कोटेशन मिळवा",
       btnWhatsApp: "WhatsApp करा"
@@ -617,45 +775,41 @@ export const translations = {
 
     // Forms & Contact
     forms: {
-      contactTitle: "संपर्क साधा व साइट सर्व्हे विनंती",
-      contactSubtitle: "आमच्या MSEDCL मान्यताप्राप्त सोलर इंजिनियर्सशी थेट बोला",
+      contactTitle: "संपर्क व मोफत साइट सर्व्हे चौकशी",
+      contactSubtitle: "आमच्या अधिकृत सोलर EPC इंजिनिअर्सशी थेट संपर्क साधा",
       fullName: "पूर्ण नाव",
       mobileNumber: "मोबाईल नंबर",
       email: "ईमेल पत्ता",
-      city: "शहर / जिल्हा",
+      city: "गाव / शहर / जिल्हा",
       customerType: "ग्राहक प्रकार",
-      types: ["घरगुती रूफटॉप (Residential)", "व्यावसायिक (Commercial)", "औद्योगिक (Industrial)", "शेती / फार्म (Agricultural)"],
+      types: ["घरगुती (Residential)", "व्यावसायिक (Commercial)", "औद्योगिक (Industrial)", "शेती (Agricultural)"],
       monthlyBill: "मासिक वीज बिल (₹)",
       interestedService: "हवी असलेली सोलर सेवा",
-      message: "संदेश / विशिष्ट आवश्यकता",
+      message: "मेसेज किंवा इतर आवश्यकता",
       submitInquiry: "चौकशी पाठवा",
       successMsg: "धन्यवाद! आमचे सोलर तज्ज्ञ तुमच्याशी लवकरच संपर्क साधतील.",
-      
-      // Online Quote Form
-      quoteTitle: "झटपट सोलर कोटेशन मिळवा",
-      propertyType: "मालमत्तेचा प्रकार",
-      solarReq: "आवश्यक सोलर क्षमता (kW)",
-      roofArea: "छताचे उपलब्ध क्षेत्रफळ (चौ. फूट)",
-      contactMethod: "संपर्काची आवडती पद्धत",
+      quoteTitle: "सोलर कोटेशन मिळवा",
+      propertyType: "जागेचा प्रकार",
+      solarReq: "हवी असलेली सोलर क्षमता (kW)",
+      roofArea: "उपलब्ध छताची जागा (स्क्वेअर फूट)",
+      contactMethod: "संपर्काचे पसंतीचे माध्यम",
       methods: ["फोन कॉल", "WhatsApp", "ईमेल"],
-      getQuoteBtn: "माझे कोटेशन मिळवा",
-
-      // Complaint Ticket
-      complaintTitle: "तक्रार / अडचण नोंदवा",
-      customerId: "ग्राहक आयडी / प्रोजेक्ट आयडी",
+      getQuoteBtn: "कोटेशन मिळवा",
+      complaintTitle: "तक्रार नोंदणी",
+      customerId: "ग्राहक आयडी / प्रोजेक्ट नंबर",
       category: "समस्येचा प्रकार",
-      complaintSuccessMsg: "तुमची तक्रार यशस्वीरीत्या नोंदवली गेली आहे! तुमचा तक्रार तिकीट क्रमांक आहे:"
+      complaintSuccessMsg: "तक्रार यशस्वीरित्या नोंदवली गेली आहे! तिकीट क्रमांक:"
     },
 
     // Footer
     footer: {
-      quickLinks: "महत्वाच्या लिंक्स",
+      quickLinks: "महत्त्वाचे दुवे",
       services: "सोलर सेवा",
       contactInfo: "संपर्क माहिती",
-      rights: "© ग्रीन लीफ एनर्जी सोल्युशन. सर्व हक्क सुरक्षित.",
-      privacy: "गोपनीयता धोरण (Privacy Policy)",
-      terms: "नियम व अटी (Terms)",
-      disclaimer: "डिस्कलेमर"
+      rights: "© Green Leaf Energy Solution. सर्व हक्क राखीव.",
+      privacy: "गोपनीयता धोरण",
+      terms: "नियम व अटी",
+      disclaimer: "अस्वीकरण"
     }
   }
 };

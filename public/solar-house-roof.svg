@@ -1,157 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
   <defs>
-    <!-- Bright Daytime Sky Gradient -->
-    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0284C7" />
-      <stop offset="40%" stop-color="#38BDF8" />
-      <stop offset="75%" stop-color="#BAE6FD" />
-      <stop offset="100%" stop-color="#E0F2FE" />
-    </linearGradient>
-    
-    <!-- Brilliant Sun Glow Gradient -->
-    <radialGradient id="sunRadial" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="25%" stop-color="#FEF08A" />
-      <stop offset="55%" stop-color="#FACC15" />
-      <stop offset="85%" stop-color="#F97316" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#F97316" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Solar Panel High-Tech Metallic Blue -->
-    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E3A8A" />
-      <stop offset="35%" stop-color="#1D4ED8" />
-      <stop offset="70%" stop-color="#2563EB" />
-      <stop offset="100%" stop-color="#0F172A" />
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#022c22" />
     </linearGradient>
 
-    <!-- Solar Reflection Glare -->
-    <linearGradient id="solarGlare" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.7" />
-      <stop offset="20%" stop-color="#FFFFFF" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    <linearGradient id="pvCellGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1" />
+      <stop offset="40%" stop-color="#0284c7" />
+      <stop offset="80%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
     </linearGradient>
 
-    <!-- House Roof Gradient -->
-    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#334155" />
-      <stop offset="100%" stop-color="#1E293B" />
+    <linearGradient id="frameGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="50%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#64748b" />
     </linearGradient>
 
-    <!-- House Wall Gradient -->
-    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F8FAFC" />
-      <stop offset="100%" stop-color="#E2E8F0" />
-    </linearGradient>
-    
-    <!-- Grass & Land Gradient -->
-    <linearGradient id="grassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#22C55E" />
-      <stop offset="100%" stop-color="#15803D" />
+    <linearGradient id="glowLine2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0" />
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
     </linearGradient>
 
-    <filter id="sunGlowFilter" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="25" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1" stroke-opacity="0.6"/>
+    </pattern>
   </defs>
 
-  <!-- Sky Background -->
-  <rect width="1000" height="650" fill="url(#skyGrad)" />
+  <rect width="1200" height="800" fill="url(#bgGrad2)" />
+  <rect width="1200" height="800" fill="url(#grid2)" />
 
-  <!-- Sun Rays & Golden Glow -->
-  <circle cx="820" cy="130" r="180" fill="url(#sunRadial)" filter="url(#sunGlowFilter)" />
-  <circle cx="820" cy="130" r="70" fill="#FFFFFF" opacity="0.9" />
+  <circle cx="600" cy="400" r="350" fill="#059669" opacity="0.08" filter="blur(60px)" />
+  <circle cx="950" cy="200" r="200" fill="#0284c7" opacity="0.08" filter="blur(50px)" />
 
-  <!-- Soft Distant Clouds -->
-  <path d="M 50 180 Q 80 150 120 170 Q 150 140 200 160 Q 240 150 270 180 Z" fill="#FFFFFF" opacity="0.75" />
-  <path d="M 450 120 Q 480 90 520 110 Q 560 80 610 100 Q 650 90 680 120 Z" fill="#FFFFFF" opacity="0.65" />
+  <path d="M 100 200 L 300 200 L 350 250 L 850 250 L 900 200 L 1100 200" fill="none" stroke="url(#glowLine2)" stroke-width="2" />
+  <path d="M 150 650 L 450 650 L 500 600 L 800 600" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.4" />
 
-  <!-- Lush Green Ground / Lawn -->
-  <ellipse cx="500" cy="620" rx="650" ry="120" fill="url(#grassGrad)" />
-
-  <!-- Green Trees in Background -->
-  <circle cx="150" cy="420" r="70" fill="#166534" />
-  <circle cx="120" cy="400" r="50" fill="#15803D" />
-  <circle cx="180" cy="390" r="55" fill="#22C55E" />
-  
-  <circle cx="850" cy="430" r="80" fill="#166534" />
-  <circle cx="890" cy="410" r="60" fill="#15803D" />
-
-  <!-- Residential House Base Structure -->
-  <!-- Main Building Body -->
-  <rect x="250" y="320" width="500" height="260" fill="url(#wallGrad)" rx="4" />
-  
-  <!-- Architectural Trim & Base Line -->
-  <rect x="240" y="575" width="520" height="15" fill="#94A3B8" />
-
-  <!-- Modern Windows -->
-  <rect x="290" y="360" width="80" height="90" fill="#38BDF8" stroke="#0284C7" stroke-width="4" rx="4" opacity="0.9" />
-  <line x1="330" y1="360" x2="330" y2="450" stroke="#FFFFFF" stroke-width="3" />
-  <line x1="290" y1="405" x2="370" y2="405" stroke="#FFFFFF" stroke-width="3" />
-
-  <rect x="630" y="360" width="80" height="90" fill="#38BDF8" stroke="#0284C7" stroke-width="4" rx="4" opacity="0.9" />
-  <line x1="670" y1="360" x2="670" y2="450" stroke="#FFFFFF" stroke-width="3" />
-  <line x1="630" y1="405" x2="710" y2="405" stroke="#FFFFFF" stroke-width="3" />
-
-  <!-- Main Wooden Door -->
-  <rect x="460" y="440" width="80" height="135" fill="#78350F" rx="4" />
-  <circle cx="525" cy="510" r="5" fill="#F59E0B" />
-
-  <!-- Main Roof (Pitched Rooftop) -->
-  <polygon points="200,330 500,160 800,330" fill="url(#roofGrad)" />
-  <polygon points="180,330 500,145 820,330 800,345 500,165 200,345" fill="#0F172A" />
-
-  <!-- ROOFTOP SOLAR PANEL SYSTEM ARRAY (High Precision Grid) -->
-  <!-- Left Side Solar Array -->
-  <g transform="translate(240, 210) skewY(-28) scale(0.95, 0.75)">
-    <!-- Heavy Duty Mounting Frame -->
-    <rect x="-8" y="-8" width="256" height="156" fill="#475569" rx="6" />
-    <rect x="0" y="0" width="240" height="140" fill="url(#panelGrad)" stroke="#38BDF8" stroke-width="3" rx="4" />
+  <g transform="translate(600, 420)">
+    <path d="M -420 180 L 420 180 L 480 -80 L -360 -80 Z" fill="#0f172a" stroke="url(#frameGrad2)" stroke-width="4" rx="4" />
     
-    <!-- Cell Separation Grid -->
-    <line x1="60" y1="0" x2="60" y2="140" stroke="#60A5FA" stroke-width="1.5" />
-    <line x1="120" y1="0" x2="120" y2="140" stroke="#60A5FA" stroke-width="1.5" />
-    <line x1="180" y1="0" x2="180" y2="140" stroke="#60A5FA" stroke-width="1.5" />
-    
-    <line x1="0" y1="35" x2="240" y2="35" stroke="#60A5FA" stroke-width="1.5" />
-    <line x1="0" y1="70" x2="240" y2="70" stroke="#60A5FA" stroke-width="1.5" />
-    <line x1="0" y1="105" x2="240" y2="105" stroke="#60A5FA" stroke-width="1.5" />
+    <polygon points="-390,160 -195,160 -170,40 -360,40" fill="url(#pvCellGrad2)" stroke="#38bdf8" stroke-width="2" />
+    <polygon points="-185,160 10,160 30,40 -160,40" fill="url(#pvCellGrad2)" stroke="#38bdf8" stroke-width="2" />
+    <polygon points="20,160 215,160 230,40 40,40" fill="url(#pvCellGrad2)" stroke="#38bdf8" stroke-width="2" />
+    <polygon points="225,160 410,160 420,40 240,40" fill="url(#pvCellGrad2)" stroke="#38bdf8" stroke-width="2" />
 
-    <!-- Sunlight Reflection Glare Line -->
-    <polygon points="0,0 140,0 40,140 0,140" fill="url(#solarGlare)" />
+    <polygon points="-355,30 -165,30 -145,-70 -330,-70" fill="url(#pvCellGrad2)" stroke="#38bdf8" stroke-width="1.5" />
+    <polygon points="-155,30 35,30 50,-70 -135,-70" fill="url(#pvCellGrad2)" stroke="#38bdf8" stroke-width="1.5" />
+    <polygon points="45,30 235,30 245,-70 60,-70" fill="url(#pvCellGrad2)" stroke="#38bdf8" stroke-width="1.5" />
+    <polygon points="245,30 415,30 420,-70 255,-70" fill="url(#pvCellGrad2)" stroke="#38bdf8" stroke-width="1.5" />
+
+    <line x1="-380" y1="180" x2="-380" y2="280" stroke="#94a3b8" stroke-width="10" stroke-linecap="round" />
+    <line x1="410" y1="180" x2="410" y2="280" stroke="#94a3b8" stroke-width="10" stroke-linecap="round" />
+    <line x1="-330" y1="-80" x2="-330" y2="100" stroke="#64748b" stroke-width="8" />
+    <line x1="450" y1="-80" x2="450" y2="100" stroke="#64748b" stroke-width="8" />
+    
+    <line x1="-380" y1="270" x2="410" y2="190" stroke="#64748b" stroke-width="4" stroke-dasharray="8 8" opacity="0.6" />
+    <line x1="410" y1="270" x2="-380" y2="190" stroke="#64748b" stroke-width="4" stroke-dasharray="8 8" opacity="0.6" />
+
+    <line x1="-375" y1="100" x2="415" y2="100" stroke="#ffffff" stroke-width="1" opacity="0.25" />
+    <line x1="-340" y1="-20" x2="418" y2="-20" stroke="#ffffff" stroke-width="1" opacity="0.25" />
   </g>
 
-  <!-- Right Side Solar Array -->
-  <g transform="translate(520, 210) skewY(28) scale(0.95, 0.75)">
-    <!-- Heavy Duty Mounting Frame -->
-    <rect x="-8" y="-8" width="256" height="156" fill="#475569" rx="6" />
-    <rect x="0" y="0" width="240" height="140" fill="url(#panelGrad)" stroke="#38BDF8" stroke-width="3" rx="4" />
-    
-    <!-- Cell Separation Grid -->
-    <line x1="60" y1="0" x2="60" y2="140" stroke="#60A5FA" stroke-width="1.5" />
-    <line x1="120" y1="0" x2="120" y2="140" stroke="#60A5FA" stroke-width="1.5" />
-    <line x1="180" y1="0" x2="180" y2="140" stroke="#60A5FA" stroke-width="1.5" />
-    
-    <line x1="0" y1="35" x2="240" y2="35" stroke="#60A5FA" stroke-width="1.5" />
-    <line x1="0" y1="70" x2="240" y2="70" stroke="#60A5FA" stroke-width="1.5" />
-    <line x1="0" y1="105" x2="240" y2="105" stroke="#60A5FA" stroke-width="1.5" />
-
-    <!-- Sunlight Reflection Glare Line -->
-    <polygon points="0,0 140,0 40,140 0,140" fill="url(#solarGlare)" />
+  <g transform="translate(80, 100)">
+    <rect width="360" height="70" fill="#0f172a" stroke="#1e293b" rx="8" opacity="0.9" />
+    <circle cx="30" cy="35" r="14" fill="#10b981" />
+    <text x="30" y="40" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#ffffff" text-anchor="middle">✓</text>
+    <text x="60" y="30" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#ffffff" letter-spacing="1">GREEN LEAF ENERGY SOLUTION</text>
+    <text x="60" y="52" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#10b981" letter-spacing="0.5">MSEDCL APPROVED SOLAR EPC CONTRACTOR</text>
   </g>
 
-  <!-- Clean Energy Energy Sparkles & Sun Reflections -->
-  <circle cx="480" cy="180" r="6" fill="#FACC15" filter="url(#sunGlowFilter)" />
-  <circle cx="340" cy="220" r="4" fill="#38BDF8" filter="url(#sunGlowFilter)" />
-  <circle cx="660" cy="220" r="4" fill="#4ADE80" filter="url(#sunGlowFilter)" />
+  <g transform="translate(840, 100)">
+    <rect width="280" height="70" fill="#0f172a" stroke="#1e293b" rx="8" opacity="0.9" />
+    <text x="20" y="30" font-family="Arial, sans-serif" font-weight="900" font-size="13" fill="#38bdf8">SYSTEM: 5 kWp ON-GRID</text>
+    <text x="20" y="52" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#94a3b8">TIER-1 MONO PERC DCR MODULES</text>
+  </g>
 
-  <!-- Quality EPC Badge Stamp on Graphic -->
-  <g transform="translate(50, 40)">
-    <rect width="180" height="42" fill="#15803D" rx="21" opacity="0.9" />
-    <text x="90" y="26" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">ROOFTOP SOLAR</text>
+  <g transform="translate(80, 720)">
+    <text x="0" y="0" font-family="monospace" font-size="12" fill="#64748b" letter-spacing="2">BARAMATI, MH • 18°09'07"N 74°34'50"E • ELEVATED GI STRUCTURE • ISO 9001:2015</text>
   </g>
 </svg>

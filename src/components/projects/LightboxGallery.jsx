@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { Modal } from '../layout/Modal';
 import { Camera, Play, Image as ImageIcon, X } from 'lucide-react';
+import { projectImages } from '../../config/projectImages';
 
 export const LightboxGallery = () => {
   const { t } = useLanguage();
@@ -11,52 +12,67 @@ export const LightboxGallery = () => {
   const galleryItems = [
     {
       id: 1,
-      title: "Rooftop Mono-PERC Solar Panel Alignment",
+      title: "5 kWp Commissioned Turnkey Residential Rooftop",
       category: "Residential",
       type: "image",
-      url: "https://images.unsplash.com/photo-1509391365360-2e959784a276?q=80&w=1200&auto=format&fit=crop",
-      caption: "High quality aluminum rail structure mounting on residential rooftop."
+      url: projectImages.final,
+      caption: "Elevated galvanized mounting structure on RCC residential terrace."
     },
     {
       id: 2,
-      title: "Industrial Commercial Factory Roof Solar",
-      category: "Commercial",
+      title: "3 kWp PM Surya Ghar Residential Solar System",
+      category: "Residential",
       type: "image",
-      url: "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=1200&auto=format&fit=crop",
-      caption: "50 kW grid-tied industrial solar power plant."
+      url: projectImages.res3kw,
+      caption: "High-yield DCR solar module alignment on home terrace in Baramati."
     },
     {
       id: 3,
-      title: "Drone Aerial Shot of Solar Farm",
-      category: "Drone Photos",
+      title: "10 kWp Commercial Hospital Rooftop Solar Plant",
+      category: "Commercial",
       type: "image",
-      url: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=1200&auto=format&fit=crop",
-      caption: "Aerial perspective of clean green energy installation."
+      url: projectImages.commercial,
+      caption: "10 kWp hospital rooftop solar installation with high-efficiency tier-1 panels and smart inverters."
     },
     {
       id: 4,
-      title: "MSEDCL Net Metering Inspection",
-      category: "Installation",
+      title: "50 kWp Industrial Factory Shed Solar Plant",
+      category: "Industrial",
       type: "image",
-      url: "https://images.unsplash.com/photo-1508873696983-2df515122519?q=80&w=1200&auto=format&fit=crop",
-      caption: "Professional engineering team inspecting bi-directional net meter."
+      url: projectImages.industrial50kw,
+      caption: "Wide-span bifacial solar panel array on MIDC industrial manufacturing shed."
     },
     {
       id: 5,
-      title: "Hybrid Lithium Battery Backup Setup",
+      title: "Commercial Pergola Structure Erection",
       category: "Installation",
       type: "image",
-      url: "https://images.unsplash.com/photo-1558441719-443b34438ad9?q=80&w=1200&auto=format&fit=crop",
-      caption: "Smart hybrid solar inverter with LiFePO4 battery bank."
+      url: projectImages.commercialStructure,
+      caption: "Raised hot-dip galvanized pergola steel structure providing shaded recreation space."
     },
     {
       id: 6,
-      title: "Solar Installation Project Overview",
-      category: "Videos",
-      type: "video",
-      url: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder video embed
-      thumbnail: "https://images.unsplash.com/photo-1509391365360-2e959784a276?q=80&w=800&auto=format&fit=crop",
-      caption: "Video walkthrough of 10 kW rooftop solar commissioning."
+      title: "Industrial 50 kW 3-Phase Inverter & LT Panel",
+      category: "Installation",
+      type: "image",
+      url: projectImages.industrialInverterPanel,
+      caption: "50 kW commercial solar string inverter and AC/DC distribution panel with digital energy meter."
+    },
+    {
+      id: 7,
+      title: "Solar Inverter Installation & Conduit Cabling",
+      category: "Installation",
+      type: "image",
+      url: projectImages.inverter,
+      caption: "Professional grid-tied string inverter with safety isolators and earthing."
+    },
+    {
+      id: 8,
+      title: "AC/DC Distribution Box with SPD Protection",
+      category: "Installation",
+      type: "image",
+      url: projectImages.acdcDb,
+      caption: "Weather-proof ACDB and DCDB with surge arrestors and MCBs."
     }
   ];
 
@@ -107,7 +123,10 @@ export const LightboxGallery = () => {
             >
               <img 
                 src={item.type === 'video' ? item.thumbnail : item.url} 
-                onError={(e) => { e.currentTarget.src = '/solar-about.svg'; }}
+                onError={(e) => { 
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = projectImages.final; 
+                }}
                 alt={item.title} 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />

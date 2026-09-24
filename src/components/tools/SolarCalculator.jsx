@@ -54,7 +54,7 @@ const DesktopCalculatorView = ({
             onChange={(e) => setRoofType(e.target.value)}
             className="w-full p-3 bg-white rounded-xl border border-slate-200 text-xs font-semibold text-slate-800 focus:ring-2 focus:ring-solar-green focus:outline-none"
           >
-            {t('calculator.roofTypes').map((rt, idx) => (
+            {(Array.isArray(t('calculator.roofTypes')) ? t('calculator.roofTypes') : ["Concrete RCC Flat Roof", "Metal Tin Shed", "Tiled Roof", "Ground Area"]).map((rt, idx) => (
               <option key={idx} value={rt}>{rt}</option>
             ))}
           </select>
@@ -212,7 +212,7 @@ const MobileCalculatorView = ({
               onChange={(e) => setRoofType(e.target.value)}
               className="w-full p-2 bg-white rounded-lg border border-slate-200 text-xs font-semibold text-slate-800"
             >
-              {t('calculator.roofTypes').map((rt, idx) => (
+              {(Array.isArray(t('calculator.roofTypes')) ? t('calculator.roofTypes') : ["Concrete RCC Flat Roof", "Metal Tin Shed", "Tiled Roof", "Ground Area"]).map((rt, idx) => (
                 <option key={idx} value={rt}>{rt}</option>
               ))}
             </select>

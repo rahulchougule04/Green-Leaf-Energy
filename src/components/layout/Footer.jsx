@@ -15,9 +15,11 @@ const DesktopFooterView = ({ handleNav, t }) => {
         {/* Column 1: Brand Bio */}
         <div className="col-span-4 space-y-4">
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => handleNav('home')}>
-            <div className="w-10 h-10 rounded-xl bg-solar-green flex items-center justify-center text-white shadow-md">
-              <Sun className="w-6 h-6 text-solar-amber" />
-            </div>
+            <img 
+              src="/brand-logo.png" 
+              alt="Green Leaf Logo" 
+              className="w-12 h-12 rounded-full shadow-md object-cover"
+            />
             <div>
               <span className="text-xl font-extrabold text-white tracking-tight block leading-none">
                 {siteConfig.companyName}
@@ -44,13 +46,13 @@ const DesktopFooterView = ({ handleNav, t }) => {
             {t('footer.quickLinks')}
           </h4>
           <ul className="space-y-2 text-xs">
-            {['home', 'about', 'services', 'calculator', 'subsidy', 'contact'].map((id) => (
+            {['home', 'about', 'projects', 'subsidy', 'blog', 'calculator', 'reviews', 'contact'].map((id) => (
               <li key={id}>
                 <button 
                   onClick={() => handleNav(id)}
                   className="hover:text-solar-green transition-colors capitalize"
                 >
-                  • {t(`nav.${id}`)}
+                  • {t(`nav.${id}`) || id}
                 </button>
               </li>
             ))}
@@ -119,9 +121,11 @@ const MobileFooterView = ({ handleNav, t }) => {
       {/* Mobile Brand Info */}
       <div className="space-y-3">
         <div className="flex items-center space-x-2.5 cursor-pointer" onClick={() => handleNav('home')}>
-          <div className="w-8 h-8 rounded-lg bg-solar-green flex items-center justify-center text-white shadow">
-            <Sun className="w-5 h-5 text-solar-amber" />
-          </div>
+          <img 
+            src="/brand-logo.png" 
+            alt="Green Leaf Logo" 
+            className="w-10 h-10 rounded-full shadow-md object-cover"
+          />
           <div>
             <span className="text-base font-extrabold text-white tracking-tight block leading-none">
               {siteConfig.companyName}
@@ -155,13 +159,13 @@ const MobileFooterView = ({ handleNav, t }) => {
 
       {/* Mobile Quick Navigation Grid */}
       <div className="grid grid-cols-2 gap-2 text-xs">
-        {['home', 'about', 'services', 'calculator', 'subsidy', 'contact'].map((id) => (
+        {['home', 'about', 'projects', 'subsidy', 'blog', 'calculator', 'reviews', 'contact'].map((id) => (
           <button
             key={id}
             onClick={() => handleNav(id)}
             className="text-left bg-blue-950/40 p-2.5 rounded-lg border border-blue-900/40 text-slate-300 font-bold capitalize hover:text-solar-green"
           >
-            • {t(`nav.${id}`)}
+            • {t(`nav.${id}`) || id}
           </button>
         ))}
       </div>
@@ -172,12 +176,24 @@ const MobileFooterView = ({ handleNav, t }) => {
 /* ==========================================================================
    MAIN FOOTER COMPONENT (Renders Desktop & Mobile Views)
    ========================================================================== */
-export const Footer = ({ setActiveTab }) => {
+export const Footer = ({ setActiveTab, scrollToSection }) => {
   const { t } = useLanguage();
 
   const handleNav = (id) => {
-    setActiveTab(id);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (scrollToSection) {
+      scrollToSection(id);
+    } else {
+      if (setActiveTab) setActiveTab(id);
+      if (id === 'home') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        const el = document.getElementById(id);
+        if (el) {
+          const y = el.getBoundingClientRect().top + window.pageYOffset - 80;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }
+    }
   };
 
   return (
