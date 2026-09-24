@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
+import { siteConfig } from '../../config/siteConfig';
 import { Modal } from '../layout/Modal';
 import { Send, CheckCircle2, FileText, Sparkles } from 'lucide-react';
 
@@ -22,7 +23,7 @@ export const QuoteWizardModal = ({ isOpen, onClose }) => {
     e.preventDefault();
     setSubmitted(true);
 
-    // Auto dispatch quote request to WhatsApp number 9322513396
+    // Auto dispatch quote request to WhatsApp
     const messageLines = [
       `*New Solar Quotation Request - Green Leaf Energy Solution*`,
       `👤 *Name:* ${formData.name}`,
@@ -34,7 +35,7 @@ export const QuoteWizardModal = ({ isOpen, onClose }) => {
       `📐 *Roof Area:* ${formData.roofArea ? formData.roofArea + ' sq ft' : 'Not Specified'}`
     ].join('\n');
 
-    const whatsappUrl = `https://wa.me/919322513396?text=${encodeURIComponent(messageLines)}`;
+    const whatsappUrl = `https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(messageLines)}`;
     window.open(whatsappUrl, '_blank');
   };
 
