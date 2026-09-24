@@ -282,20 +282,17 @@ export const ProjectShowcase = ({ openQuoteModal }) => {
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     
-                    {/* Stage Pill Overlay */}
-                    <div className="absolute top-3 left-3 bg-slate-900/90 backdrop-blur-md text-white text-[11px] font-black px-3 py-1 rounded-md uppercase tracking-wider flex items-center space-x-1.5 border border-slate-700">
-                      <ImageIcon className="w-3.5 h-3.5 text-emerald-400" />
-                      <span>Stage: {currentStage.label}</span>
-                    </div>
-
-                    {/* Capacity Badge */}
-                    <div className="absolute top-3 right-3 bg-emerald-600 text-white text-xs font-black px-3 py-1 rounded-md shadow-md">
-                      ⚡ {project.projectTitle}
+                    {/* Top Overlay Badges */}
+                    <div className="absolute top-3 right-3 flex flex-col sm:flex-row gap-2 justify-end items-start">
+                      {/* Capacity Badge */}
+                      <div className="bg-emerald-600 text-white text-[11px] font-black px-3 py-1 rounded-md shadow-md max-w-full truncate">
+                        ⚡ {project.projectTitle}
+                      </div>
                     </div>
 
                     {/* Stage Note Bar */}
-                    <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/95 via-slate-950/70 to-transparent p-3.5 text-white flex justify-between items-end">
-                      <p className="text-xs text-slate-200 line-clamp-2 pr-4 font-medium">
+                    <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/95 via-slate-950/70 to-transparent p-3.5 text-white flex justify-between items-end gap-3">
+                      <p className="text-xs text-slate-200 line-clamp-2 pr-2 font-medium">
                         {currentStage.note}
                       </p>
                       <button
